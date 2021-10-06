@@ -12,9 +12,13 @@ C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Vi
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\View.exe
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\View.pdb
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.Form1.resources
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.Properties.Resources.resources
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.exe
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormCliente.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormLogin.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormPatio.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVaga.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVeiculo.resources

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Class1
+    public class Cliente : Entity
     {
+        public String Nome { get; set; }
 
-        public Int32 Id { get; set; }
-
-        public String Name { get; set; }
+        public string Cpf { get; set; }
     }
 }
