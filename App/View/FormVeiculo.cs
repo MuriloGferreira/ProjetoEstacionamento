@@ -89,6 +89,14 @@ namespace View
 
             Veiculo veiculos = new Veiculo();
 
+            veiculos.Placa = txtBoxVeiculoPlaca.Text;
+            veiculos.Modelo = txtBoxVeiculoModelo.Text;
+            veiculos.Nome = txtBoxVeiculoNome.Text;
+            veiculos.Cor = txtBoxVeiculoCor.Text;
+
+            this.Tag = veiculos;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

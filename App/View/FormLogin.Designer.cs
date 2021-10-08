@@ -35,6 +35,7 @@ namespace View
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBoxLoginUsuario
@@ -43,6 +44,7 @@ namespace View
             this.txtBoxLoginUsuario.Name = "txtBoxLoginUsuario";
             this.txtBoxLoginUsuario.Size = new System.Drawing.Size(166, 20);
             this.txtBoxLoginUsuario.TabIndex = 2;
+            this.txtBoxLoginUsuario.Text = "Murilo";
             this.txtBoxLoginUsuario.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // btnLogin
@@ -61,6 +63,7 @@ namespace View
             this.txtBoxLoginSenha.Name = "txtBoxLoginSenha";
             this.txtBoxLoginSenha.Size = new System.Drawing.Size(166, 20);
             this.txtBoxLoginSenha.TabIndex = 5;
+            this.txtBoxLoginSenha.Text = "murilo123";
             // 
             // labelUsuario
             // 
@@ -91,12 +94,25 @@ namespace View
             this.label4.Size = new System.Drawing.Size(111, 13);
             this.label4.TabIndex = 29;
             this.label4.Text = "LOGIN DO USUÁRIO";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lblMsg
+            // 
+            this.lblMsg.AutoSize = true;
+            this.lblMsg.ForeColor = System.Drawing.Color.Red;
+            this.lblMsg.Location = new System.Drawing.Point(126, 267);
+            this.lblMsg.Name = "lblMsg";
+            this.lblMsg.Size = new System.Drawing.Size(143, 13);
+            this.lblMsg.TabIndex = 30;
+            this.lblMsg.Text = "Usuário ou senha inválidos!!!";
+            this.lblMsg.Visible = false;
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 289);
+            this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.labelUsuario);
@@ -118,6 +134,7 @@ namespace View
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblMsg;
     }
 }
 

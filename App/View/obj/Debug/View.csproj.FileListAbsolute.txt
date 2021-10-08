@@ -22,3 +22,10 @@ C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\Vi
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormPatio.resources
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVaga.resources
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVeiculo.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Model.dll
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.dll
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Model.pdb
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.pdb
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormPrincipal.resources
+C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVeiculo.resources

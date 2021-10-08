@@ -8,7 +8,7 @@ namespace Model
 {
     public class Veiculo : Entity
     {
-        public String Name { get; set; }
+        public String Nome { get; set; }
 
         public string Placa { get; set; }
 

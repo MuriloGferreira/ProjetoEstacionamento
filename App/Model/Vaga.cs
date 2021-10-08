@@ -8,7 +8,7 @@ namespace Model
 {
     public class Vaga : Entity
     {
-        public String Name { get; set; }
+        public String Nome { get; set; }
 
         public string Numero { get; set; }
 

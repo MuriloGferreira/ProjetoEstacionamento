@@ -52,7 +52,7 @@ namespace View
             // descPatio
             // 
             this.descPatio.AutoSize = true;
-            this.descPatio.Location = new System.Drawing.Point(30, 77);
+            this.descPatio.Location = new System.Drawing.Point(33, 77);
             this.descPatio.Name = "descPatio";
             this.descPatio.Size = new System.Drawing.Size(72, 13);
             this.descPatio.TabIndex = 25;
@@ -89,11 +89,11 @@ namespace View
             // 
             // btnPatioValorTotal
             // 
-            this.btnPatioValorTotal.Location = new System.Drawing.Point(111, 163);
+            this.btnPatioValorTotal.Location = new System.Drawing.Point(67, 163);
             this.btnPatioValorTotal.Name = "btnPatioValorTotal";
-            this.btnPatioValorTotal.Size = new System.Drawing.Size(96, 23);
+            this.btnPatioValorTotal.Size = new System.Drawing.Size(182, 23);
             this.btnPatioValorTotal.TabIndex = 30;
-            this.btnPatioValorTotal.Text = "VALOR TOTAL";
+            this.btnPatioValorTotal.Text = "CALCULAR VALOR TOTAL";
             this.btnPatioValorTotal.UseVisualStyleBackColor = true;
             this.btnPatioValorTotal.Click += new System.EventHandler(this.btnPatioValorTotal_Click);
             // 

@@ -46,7 +46,61 @@ namespace View
             }
 
             Login logins = new Login();
+
+            logins.Usuario = txtBoxLoginUsuario.Text;
+            logins.Senha = txtBoxLoginSenha.Text;
+
+            if (ValidarLogin(logins))
+            {
+                this.DialogResult = DialogResult.OK;
+
+                this.Tag = logins;
+
+                this.Close();
+            }
+            else
+            {
+                lblMsg.Visible = true;
+            }
         }
-    
+
+        private bool ValidarLogin(Login user)
+        {
+            bool resultado = false;
+
+            try
+            {
+                if (user.Usuario.Equals("Murilo") && user.Senha.Equals("murilo123"))
+                {
+                    resultado = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO AO EFETUAR LOGIN: " + ex.Message);
+            }
+
+            return resultado;
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case Keys.Enter:
+                    btnLogin_Click(null, null);
+                    break;
+                case Keys.Escape:
+                    this.Close();
+                    break;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

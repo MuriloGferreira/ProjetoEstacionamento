@@ -64,6 +64,8 @@ namespace View
             }
 
             Cliente cliente = new Cliente();
+
+
         }
     }
 }
