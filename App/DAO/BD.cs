@@ -38,6 +38,11 @@ namespace DAO
             }
         }
 
+        internal static DataTableReader ExecutarSelect(string sQL)
+        {
+            throw new NotImplementedException();
+        }
+
         public static void CloseConection()
         {
             try
@@ -58,23 +63,102 @@ namespace DAO
 
         public static DataTableReader ExecutSelect(String SQL)
         {
+            try
+            {
+                OpenConection();
 
+                DataTable dt = new DataTable();
+
+                SqlCeCommand cmd = new SqlCeCommand(SQL, conection);
+
+                SqlCeDataAdapter adapter = new SqlCeDataAdapter(cmd);
+
+                adapter.Fill(dt);
+
+                DataTableReader data = dt.CreateDataReader();
+
+                CloseConection();
+
+                return data;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO EXECUTAR SELECT" + ex.Message);
+            }
         }
 
 
         //IDU = Insert, delet, update
         public static int ExecutarIDU(String SQL)
         {
+            try
+            {
+                OpenConection();
 
+                SqlCeCommand cmd = new SqlCeCommand(SQL, conection);
+
+                int linhasAfetadas = cmd.ExecuteNonQuery();
+
+                CloseConection();
+
+                return linhasAfetadas;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO EXECUTAR IDU" + ex.Message);
+            }
         }
 
-        public static int ExecutarIDU(String SQL, List<SqlCeParameter> parameters)
+        public static int ExecutarIDU(String SQL, List<SqlCeParameter> _parameters)
         {
+            try
+            {
+                OpenConection();
 
+                SqlCeCommand cmd = new SqlCeCommand(SQL, conection);
+
+                cmd.Parameters.AddRange(_parameters.ToArray());
+
+                int linhasAfetadas = cmd.ExecuteNonQuery();
+
+                CloseConection();
+
+                return linhasAfetadas;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO EXECUTAR IDU" + ex.Message);
+            }
         }
 
-        public static Object ExecutarInsertComRetornoDeValor(String SQL, List<SqlCeParameter> parameters))
+        public static Object ExecutarInsertComRetornoDeValor(String SQL, List<SqlCeParameter> _parameters)
         {
+            try
+            {
+                OpenConection();
+
+                SqlCeCommand cmd = new SqlCeCommand(SQL, conection);
+
+                cmd.Parameters.AddRange(_parameters.ToArray());
+                int linhasAfetadas = cmd.ExecuteNonQuery();
+
+
+                cmd.CommandText = "SELECT @@IDENTITY";
+
+                Object pk = cmd.ExecuteScalar();
+
+                CloseConection();
+
+                return pk;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO EXECUTAR IDU" + ex.Message);
+            }
 
         }
     }

@@ -31,10 +31,8 @@ namespace View
         {
             this.txtBoxClienteCpf = new System.Windows.Forms.TextBox();
             this.txtBoxClienteNome = new System.Windows.Forms.TextBox();
-            this.txtBoxClienteTelefone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -54,14 +52,6 @@ namespace View
             this.txtBoxClienteNome.Size = new System.Drawing.Size(100, 20);
             this.txtBoxClienteNome.TabIndex = 1;
             this.txtBoxClienteNome.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtBoxClienteTelefone
-            // 
-            this.txtBoxClienteTelefone.Location = new System.Drawing.Point(76, 120);
-            this.txtBoxClienteTelefone.Name = "txtBoxClienteTelefone";
-            this.txtBoxClienteTelefone.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxClienteTelefone.TabIndex = 2;
-            this.txtBoxClienteTelefone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label1
             // 
@@ -83,18 +73,9 @@ namespace View
             this.label2.Text = "Nome:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Telefone:";
-            // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(80, 162);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 137);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarCliente.TabIndex = 19;
@@ -117,13 +98,11 @@ namespace View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 221);
+            this.ClientSize = new System.Drawing.Size(261, 202);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCadastrarCliente);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtBoxClienteTelefone);
             this.Controls.Add(this.txtBoxClienteNome);
             this.Controls.Add(this.txtBoxClienteCpf);
             this.Name = "FormCliente";
@@ -138,10 +117,8 @@ namespace View
 
         private System.Windows.Forms.TextBox txtBoxClienteCpf;
         private System.Windows.Forms.TextBox txtBoxClienteNome;
-        private System.Windows.Forms.TextBox txtBoxClienteTelefone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCadastrarCliente;
         private System.Windows.Forms.Label label4;
     }

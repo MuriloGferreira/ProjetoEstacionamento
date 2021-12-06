@@ -10,6 +10,6 @@ namespace Model
     {
         public String Nome { get; set; }
 
-        public string Cpf { get; set; }
+        public int Cpf { get; set; }
     }
 }

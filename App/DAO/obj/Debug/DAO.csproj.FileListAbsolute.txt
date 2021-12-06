@@ -1,2 +1,10 @@
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\bin\Debug\DAO.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\bin\Debug\DAO.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\bin\Debug\Model.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\bin\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.pdb

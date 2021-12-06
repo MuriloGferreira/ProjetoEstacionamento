@@ -58,11 +58,7 @@ namespace View
             {
                 return;
             }
-            if (string.IsNullOrEmpty(txtBoxClienteTelefone.Text))
-            {
-                return;
-            }
-
+            
             Cliente cliente = new Cliente();
 
 

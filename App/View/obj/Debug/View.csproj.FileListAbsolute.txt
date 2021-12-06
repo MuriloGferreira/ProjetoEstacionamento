@@ -42,3 +42,12 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.cs
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.exe
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.exe.config
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.exe
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Model.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaClientes.resources

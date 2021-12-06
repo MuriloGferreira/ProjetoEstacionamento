@@ -10,3 +10,9 @@ C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Model\obj\Debug\M
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Model\obj\Debug\Model.dll
 C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Model\obj\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\bin\Debug\Model.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\bin\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.pdb

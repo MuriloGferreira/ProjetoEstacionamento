@@ -37,6 +37,7 @@ namespace View
             this.UsuarioLogado = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnListarVeiculosN = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,10 +49,11 @@ namespace View
             this.btnLoadCliente.TabIndex = 0;
             this.btnLoadCliente.Text = "CADASTRAR CLIENTE";
             this.btnLoadCliente.UseVisualStyleBackColor = true;
+            this.btnLoadCliente.Click += new System.EventHandler(this.btnLoadCliente_Click);
             // 
             // btnVeiculo
             // 
-            this.btnVeiculo.Location = new System.Drawing.Point(52, 162);
+            this.btnVeiculo.Location = new System.Drawing.Point(52, 204);
             this.btnVeiculo.Name = "btnVeiculo";
             this.btnVeiculo.Size = new System.Drawing.Size(216, 54);
             this.btnVeiculo.TabIndex = 1;
@@ -61,12 +63,13 @@ namespace View
             // 
             // btnLoadVaga
             // 
-            this.btnLoadVaga.Location = new System.Drawing.Point(52, 242);
+            this.btnLoadVaga.Location = new System.Drawing.Point(52, 324);
             this.btnLoadVaga.Name = "btnLoadVaga";
             this.btnLoadVaga.Size = new System.Drawing.Size(216, 54);
             this.btnLoadVaga.TabIndex = 2;
             this.btnLoadVaga.Text = "REGISTRAR VEICULO NA VAGA";
             this.btnLoadVaga.UseVisualStyleBackColor = true;
+            this.btnLoadVaga.Click += new System.EventHandler(this.btnLoadVaga_Click);
             // 
             // label4
             // 
@@ -106,7 +109,7 @@ namespace View
             // 
             // btnListarVeiculosN
             // 
-            this.btnListarVeiculosN.Location = new System.Drawing.Point(52, 321);
+            this.btnListarVeiculosN.Location = new System.Drawing.Point(52, 264);
             this.btnListarVeiculosN.Name = "btnListarVeiculosN";
             this.btnListarVeiculosN.Size = new System.Drawing.Size(216, 54);
             this.btnListarVeiculosN.TabIndex = 3;
@@ -114,11 +117,22 @@ namespace View
             this.btnListarVeiculosN.UseVisualStyleBackColor = true;
             this.btnListarVeiculosN.Click += new System.EventHandler(this.btnListarVeiculosN_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(52, 144);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 54);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "LISTAR CLIENTES";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnListarClientes_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 417);
+            this.ClientSize = new System.Drawing.Size(329, 410);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnListarVeiculosN);
@@ -145,5 +159,6 @@ namespace View
         private System.Windows.Forms.ToolStripLabel UsuarioLogado;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Button btnListarVeiculosN;
+        private System.Windows.Forms.Button button1;
     }
 }

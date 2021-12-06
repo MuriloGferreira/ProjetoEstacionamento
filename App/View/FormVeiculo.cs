@@ -98,5 +98,15 @@ namespace View
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

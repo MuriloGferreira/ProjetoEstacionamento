@@ -36,33 +36,16 @@ namespace View
             }
         }
 
+        
         private void btnLoadCliente_Click(object sender, EventArgs e)
         {
-
             FormCliente formCliente = new FormCliente();
             this.Hide();
             var repo = Repositorio.RepositorioGeral.Instancia;
             if (formCliente.ShowDialog() == DialogResult.OK)
             {
                 this.Show();
-            }
-            else
-            {
-                this.Close();
-            }
 
-        }
-
-        private void btnVeiculo_Click(object sender, EventArgs e)
-        {
-            FormVeiculo formVeiculo = new FormVeiculo();
-            this.Hide();
-            var repo = Repositorio.RepositorioGeral.Instancia;
-
-            if (formVeiculo.ShowDialog() == DialogResult.OK)
-            {
-                Veiculo u = (Veiculo)formVeiculo.Tag;
-                this.Show();
             }
             else
             {
@@ -70,25 +53,22 @@ namespace View
             }
         }
 
-        private void btnLoadVaga_Click(object sender, EventArgs e)
-        {
-            
-        }
+        //private void btnVeiculo_Click(object sender, EventArgs e)
+        //{
+        //    FormVeiculo formVeiculo = new FormVeiculo();
+        //    this.Hide();
+        //    var repo = Repositorio.RepositorioGeral.Instancia;
 
-        private void btnLoadPatio_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
+        //    if (formVeiculo.ShowDialog() == DialogResult.OK)
+        //    {
+        //        Veiculo u = (Veiculo)formVeiculo.Tag;
+        //        this.Show();
+        //    }
+        //    else
+        //    {
+        //        this.Close();
+        //    }
+        //}
 
         private void btnVeiculo_Click_1(object sender, EventArgs e)
         {
@@ -112,5 +92,41 @@ namespace View
                 this.Show();
             }
         }
+
+        private void btnListarClientes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var listaCliente = new FormListaClientes();
+            if (listaCliente.ShowDialog() == DialogResult.OK)
+            {
+                this.Show();
+            }
+        }
+
+        private void btnLoadVaga_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Vaga = new FormVaga();
+            if (Vaga.ShowDialog() == DialogResult.OK)
+            {
+                this.Show();
+            }
+        }
+
+        private void btnLoadPatio_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
