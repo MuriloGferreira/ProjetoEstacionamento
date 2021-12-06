@@ -1,0 +1,2 @@
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.csproj.AssemblyReference.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache

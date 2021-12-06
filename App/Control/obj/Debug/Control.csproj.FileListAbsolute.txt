@@ -1,0 +1,2 @@
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.AssemblyReference.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
