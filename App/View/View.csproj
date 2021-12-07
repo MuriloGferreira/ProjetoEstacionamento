@@ -128,6 +128,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\Model.Cliente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,6 +146,10 @@
     <ProjectReference Include="..\Control\Control.csproj">
       <Project>{ccc1f3ae-c965-42b9-8de9-5de5405b534f}</Project>
       <Name>Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{21d49b14-4471-45ae-910c-3e36088d7556}</Project>
+      <Name>DAO</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{357856ef-d610-4107-be79-d8e92f67b9a2}</Project>

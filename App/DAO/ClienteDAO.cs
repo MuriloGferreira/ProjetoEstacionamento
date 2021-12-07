@@ -9,23 +9,24 @@ using Model;
 
 namespace DAO
 {
-    public static class ClienteDAO
+    public class ClienteDAO
     {
-        public static Dictionary<int, Cliente> ListarClientes()
+        //SELECT CLIENTE
+        public Dictionary<Int64, Cliente> ListarClientes()
         {
-            Dictionary<int, Cliente> mapaClientes = new Dictionary<int, Cliente>();
+            Dictionary<Int64, Cliente> mapaClientes = new Dictionary<Int64, Cliente>();
 
             try
             {
-                String SQL = "SELECT * FROM cliente ORDER BY cpf;";
+                String SQL = "SELECT * FROM cliente ORDER BY nome;";
 
-                DataTableReader data = BD.ExecutarSelect(SQL);
+                DataTableReader data = BD.ExecutSelect(SQL);
 
                 while (data.Read())
                 {
                     Cliente cliente = new Cliente();
 
-                    cliente.Cpf = data.GetInt32(0);
+                    cliente.Cpf = data.GetInt64(0);
                     cliente.Nome = data.GetString(1);
 
                     mapaClientes.Add(cliente.Cpf, cliente);
@@ -39,102 +40,85 @@ namespace DAO
             return mapaClientes;
         }
 
+        public bool Inserir(Cliente _obj)
+        {
+            int linhasAfetadas = 0;
 
-        //public Endereco BuscarPorCPF(Int64 _cpf)
-        //{
-        //    Endereco p = null;
-        //    try
-        //    {
-        //        String SQL = String.Format("SELECT * FROM cliente WHERE participante_cpf = {0};", _cpf);
+            try
+            {
+                String SQL = String.Format ("INSERT INTO cliente(cpf,nome) VALUE ({0},{1})",_obj.Nome, _obj.Cpf);
 
-        //        DataTableReader data = BD.ExecutarSelect(SQL);
+                linhasAfetadas = BD.ExecutarIDU(SQL);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("INSERT CLIENTE" + ex.Message);
+            }
 
-        //        if (data.Read())
-        //        {
-        //            p = new Endereco();
+            if (linhasAfetadas > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        //            p.ID = data.GetInt32(0);
-        //            p.TipoEndereco = data.GetInt32(1);
-        //            p.Logradouro = data.GetString(2);
-        //            p.Cidade = data.GetInt32(3);
-        //            p.Estado = data.GetInt32(4);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("BUSCAR POR CPF / " + ex.Message);
-        //    }
+        public bool Deletar(Int64 _cpf)
+        {
+            int linhasAfetadas = 0;
 
-        //    return p;
-        //}
+            try
+            {
+                String SQL = "DELETE FROM cliente WHERE cpf = " + _cpf;
 
-        //public int Inserir(Endereco _obj)
-        //{
-        //    int idEnd = 0;
+                linhasAfetadas = BD.ExecutarIDU(SQL);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("DELETE CLIENTE" + ex.Message);
+            }
 
-        //    try
-        //    {
-        //        String SQL = String.Format("INSERT INTO enderecos (" +
-        //            "tipo_end," +
-        //            "logradouro," +
-        //            "cidade_id," +
-        //            "estado_id," +
-        //            "participante_cpf" +
-        //            ") " +
-        //            "VALUES ({0}, '{1}', {2}, {3}, {4});",
-        //            _obj.TipoEndereco,
-        //            _obj.Logradouro,
-        //            _obj.Cidade,
-        //            _obj.Estado,
-        //            _obj.ParticipanteCPF
-        //            );
+            if (linhasAfetadas > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
+        public bool Alterar(Cliente _obj)
+        {
+            int linhasAfetadas = 0;
 
-        //        Object teste = BD.ExecutarInsertComRetornoDeValor(SQL, new List<SqlCeParameter>());
-        //        idEnd = Convert.ToInt32(teste);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("INSERT / " + ex.Message);
-        //    }
+            try
+            {
+                String SQL = String.Format("UPDATE cliente SET " +
+                            "nome = {0}," +
+                            " WHERE cpf = {1}",
+                            _obj.Nome,
+                            _obj.Cpf
+                           );
 
-        //    return idEnd;
-        //}
+                linhasAfetadas = BD.ExecutarIDU(SQL);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("UPDATE CLIENTE" + ex.Message);
+            }
 
-        //public Boolean Alterar(Endereco _obj)
-        //{
-        //    int linhasAfetasdas = 0;
+            if (linhasAfetadas > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        //    try
-        //    {
-        //        String SQL = String.Format("UPDATE enderecos SET " +
-        //            "tipo_end = {0}," +
-        //            "logradouro = '{1}'," +
-        //            "cidade_id = {2}," +
-        //            "estado_id = {3}" +
-        //            " WHERE id = {4}",
-        //            _obj.TipoEndereco,
-        //            _obj.Logradouro,
-        //            _obj.Cidade,
-        //            _obj.Estado,
-        //            _obj.ID
-        //            );
-
-        //        linhasAfetasdas = BD.ExecutarIDU(SQL);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("UPDATE / " + ex.Message);
-        //    }
-
-        //    if (linhasAfetasdas > 0)
-        //    {
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
-        //}
-    }
+        }
 }

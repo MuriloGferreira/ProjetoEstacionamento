@@ -58,10 +58,10 @@ namespace View
             {
                 return;
             }
-            
-            Cliente cliente = new Cliente();
 
+            //Cliente cliente = new Cliente();
 
+            this.Close();
         }
     }
 }

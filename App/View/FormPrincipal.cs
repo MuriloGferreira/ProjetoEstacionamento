@@ -36,49 +36,49 @@ namespace View
             }
         }
 
-        
-        private void btnLoadCliente_Click(object sender, EventArgs e)
+        private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
-            FormCliente formCliente = new FormCliente();
-            this.Hide();
-            var repo = Repositorio.RepositorioGeral.Instancia;
-            if (formCliente.ShowDialog() == DialogResult.OK)
+            try
             {
-                this.Show();
+                this.Hide();
 
+                FormCliente formCliente = new FormCliente();
+
+                var repo = Repositorio.RepositorioGeral.Instancia;
+
+                if (formCliente.ShowDialog() == DialogResult.OK)
+                {
+                    
+                }
+                this.Show();
             }
-            else
+            catch (Exception ex)
             {
-                this.Close();
+                throw new Exception("ERRO AO INSERIR DADOS DO CLIENTE" + ex.Message);
             }
+
         }
 
-        //private void btnVeiculo_Click(object sender, EventArgs e)
-        //{
-        //    FormVeiculo formVeiculo = new FormVeiculo();
-        //    this.Hide();
-        //    var repo = Repositorio.RepositorioGeral.Instancia;
+        private void btnListarClientes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var listaCliente = new FormListaClientes();
+            if (listaCliente.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+            this.Show();
+        }
 
-        //    if (formVeiculo.ShowDialog() == DialogResult.OK)
-        //    {
-        //        Veiculo u = (Veiculo)formVeiculo.Tag;
-        //        this.Show();
-        //    }
-        //    else
-        //    {
-        //        this.Close();
-        //    }
-        //}
-
-        private void btnVeiculo_Click_1(object sender, EventArgs e)
+        private void btnCadastrarVeiculo_Click(object sender, EventArgs e)
         {
             this.Hide();
             var veiculo = new FormVeiculo();
             if (veiculo.ShowDialog() == DialogResult.OK)
             {
-                Veiculo veiculoCadastrado = (Veiculo)veiculo.Tag;
-                Repositorio.RepositorioGeral.RegistrarVeiculo(veiculoCadastrado);
-                Console.WriteLine(Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Count());
+                //Veiculo veiculoCadastrado = (Veiculo)veiculo.Tag;
+                //Repositorio.RepositorioGeral.RegistrarVeiculo(veiculoCadastrado);
+                //Console.WriteLine(Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Count());
             }
             this.Show();
         }
@@ -89,18 +89,9 @@ namespace View
             var listaVeiculo = new FormListaVeiculo();
             if (listaVeiculo.ShowDialog() == DialogResult.OK)
             {
-                this.Show();
+                
             }
-        }
-
-        private void btnListarClientes_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var listaCliente = new FormListaClientes();
-            if (listaCliente.ShowDialog() == DialogResult.OK)
-            {
-                this.Show();
-            }
+            this.Show();
         }
 
         private void btnLoadVaga_Click(object sender, EventArgs e)
@@ -109,8 +100,10 @@ namespace View
             var Vaga = new FormVaga();
             if (Vaga.ShowDialog() == DialogResult.OK)
             {
-                this.Show();
+                
             }
+
+            this.Show();
         }
 
         private void btnLoadPatio_Click(object sender, EventArgs e)

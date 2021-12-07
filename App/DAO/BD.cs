@@ -38,10 +38,10 @@ namespace DAO
             }
         }
 
-        internal static DataTableReader ExecutarSelect(string sQL)
-        {
-            throw new NotImplementedException();
-        }
+        //internal static DataTableReader ExecutarSelect(string sQL)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public static void CloseConection()
         {

@@ -1,12 +1,3 @@
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\bin\Debug\Repositorio.dll
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\bin\Debug\Repositorio.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\bin\Debug\Model.dll
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\bin\Debug\Model.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\obj\Debug\Repositorio.csproj.AssemblyReference.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\obj\Debug\Repositorio.csproj.CoreCompileInputs.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\obj\Debug\Repositorio.csproj.CopyComplete
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\obj\Debug\Repositorio.dll
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\Repositorio\obj\Debug\Repositorio.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Repositorio\bin\Debug\Repositorio.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Repositorio\bin\Debug\Repositorio.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Repositorio\bin\Debug\Model.dll

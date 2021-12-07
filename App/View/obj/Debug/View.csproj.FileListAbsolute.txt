@@ -1,36 +1,6 @@
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\bin\Debug\View.exe.config
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\bin\Debug\View.exe
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\bin\Debug\View.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.Form1.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.Properties.Resources.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.csproj.GenerateResource.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.exe
-C:\Users\Murilo\Desktop\AV1 - Thiago\App\View\obj\Debug\View.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\View.exe.config
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\View.exe
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\View.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.Properties.Resources.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.GenerateResource.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.exe
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormCliente.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormLogin.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormPatio.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVaga.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormVeiculo.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Model.dll
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.dll
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Model.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.pdb
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormPrincipal.resources
-C:\Users\Murilo\Desktop\AV1 - Thiago\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVeiculo.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormCliente.resources
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaClientes.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVeiculo.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormLogin.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormPatio.resources
@@ -40,14 +10,18 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.Fo
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.Properties.Resources.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.GenerateResource.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CoreCompileInputs.cache
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.exe
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.exe.config
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.exe
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\View.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\DAO.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Model.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\DAO.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Model.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Repositorio.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaClientes.resources
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.exe
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Control.dll
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Control.pdb

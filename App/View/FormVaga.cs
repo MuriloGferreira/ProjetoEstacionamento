@@ -43,7 +43,14 @@ namespace View
                 return;
             }
 
-            Vaga vagas = new Vaga();
+            //Vaga vagas = new Vaga();
+
+            this.Close();
+
+        }
+
+        private void txtBoxVagaStatus_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

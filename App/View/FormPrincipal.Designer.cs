@@ -49,7 +49,7 @@ namespace View
             this.btnLoadCliente.TabIndex = 0;
             this.btnLoadCliente.Text = "CADASTRAR CLIENTE";
             this.btnLoadCliente.UseVisualStyleBackColor = true;
-            this.btnLoadCliente.Click += new System.EventHandler(this.btnLoadCliente_Click);
+            this.btnLoadCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
             // btnVeiculo
             // 
@@ -59,7 +59,7 @@ namespace View
             this.btnVeiculo.TabIndex = 1;
             this.btnVeiculo.Text = "CADASTRAR VEICULO";
             this.btnVeiculo.UseVisualStyleBackColor = true;
-            this.btnVeiculo.Click += new System.EventHandler(this.btnVeiculo_Click_1);
+            this.btnVeiculo.Click += new System.EventHandler(this.btnCadastrarVeiculo_Click);
             // 
             // btnLoadVaga
             // 
@@ -131,7 +131,7 @@ namespace View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 410);
+            this.ClientSize = new System.Drawing.Size(329, 392);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label4);

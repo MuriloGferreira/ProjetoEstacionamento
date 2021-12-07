@@ -44,7 +44,9 @@ namespace View
             DataGridViewRow row = this.GridVeiculos.SelectedRows[0];
             for (var i = 0; i < Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Count; i++)
             {
+#pragma warning disable CS0252 // Comparação de referência não intencional possível; para obter uma comparação de valor, converta o lado esquerdo para o tipo "string"
                 if (row.Cells["Placa"].Value == Repositorio.RepositorioGeral.RepositorioGeralVeiculo[i].Placa) {
+#pragma warning restore CS0252 // Comparação de referência não intencional possível; para obter uma comparação de valor, converta o lado esquerdo para o tipo "string"
                     Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Remove(Repositorio.RepositorioGeral.RepositorioGeralVeiculo[i]);
                     GridVeiculos.Rows.Remove(row);
                 }

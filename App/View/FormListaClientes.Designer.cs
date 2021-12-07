@@ -29,54 +29,51 @@ namespace View
         /// </summary>
         private void InitializeComponent()
         {
-            this.GridClientes = new System.Windows.Forms.DataGridView();
-            this.ColunaNomeCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColunaCpfCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.GridClientes)).BeginInit();
+            this.GridViewClientes = new System.Windows.Forms.DataGridView();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewClientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // GridClientes
+            // GridViewClientes
             // 
-            this.GridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColunaNomeCliente,
-            this.ColunaCpfCliente});
-            this.GridClientes.Location = new System.Drawing.Point(130, 34);
-            this.GridClientes.Name = "GridClientes";
-            this.GridClientes.Size = new System.Drawing.Size(540, 383);
-            this.GridClientes.TabIndex = 2;
-            this.GridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVeiculos_CellContentClick);
+            this.GridViewClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridViewClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nome,
+            this.cpf});
+            this.GridViewClientes.Location = new System.Drawing.Point(296, 112);
+            this.GridViewClientes.Name = "GridViewClientes";
+            this.GridViewClientes.Size = new System.Drawing.Size(364, 150);
+            this.GridViewClientes.TabIndex = 0;
             // 
-            // ColunaNomeCliente
+            // nome
             // 
-            this.ColunaNomeCliente.FillWeight = 200F;
-            this.ColunaNomeCliente.HeaderText = "Nome";
-            this.ColunaNomeCliente.Name = "ColunaNomeCliente";
-            this.ColunaNomeCliente.Width = 200;
+            this.nome.HeaderText = "Nome";
+            this.nome.Name = "nome";
             // 
-            // ColunaCpfCliente
+            // cpf
             // 
-            this.ColunaCpfCliente.HeaderText = "CPF";
-            this.ColunaCpfCliente.Name = "ColunaCpfCliente";
-            this.ColunaCpfCliente.Width = 150;
+            this.cpf.HeaderText = "CPF";
+            this.cpf.Name = "cpf";
             // 
             // FormListaClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.GridClientes);
+            this.Controls.Add(this.GridViewClientes);
             this.Name = "FormListaClientes";
             this.Text = "FormListaClientes";
-            ((System.ComponentModel.ISupportInitialize)(this.GridClientes)).EndInit();
+            this.Load += new System.EventHandler(this.FormListaClientes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewClientes)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView GridClientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColunaNomeCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColunaCpfCliente;
+        private System.Windows.Forms.DataGridView GridViewClientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpf;
     }
 }

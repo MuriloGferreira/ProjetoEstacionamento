@@ -8,8 +8,8 @@ namespace Model
 {
     public class Cliente : Entity
     {
-        public String Nome { get; set; }
+        public string Nome { get; set; }
 
-        public int Cpf { get; set; }
+        public Int64 Cpf { get; set; }
     }
 }

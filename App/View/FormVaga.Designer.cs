@@ -101,6 +101,7 @@ namespace View
             this.txtBoxVagaStatus.Name = "txtBoxVagaStatus";
             this.txtBoxVagaStatus.Size = new System.Drawing.Size(100, 20);
             this.txtBoxVagaStatus.TabIndex = 21;
+            this.txtBoxVagaStatus.TextChanged += new System.EventHandler(this.txtBoxVagaStatus_TextChanged);
             // 
             // btnCadastrarVaga
             // 
