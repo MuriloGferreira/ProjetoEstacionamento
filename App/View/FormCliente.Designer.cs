@@ -75,7 +75,7 @@ namespace View
             // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 137);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 151);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarCliente.TabIndex = 19;

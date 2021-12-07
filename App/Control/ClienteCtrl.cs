@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DAO;
 using Model;
 
-namespace Control
+namespace control
 {
     public class ClienteCtrl
     {

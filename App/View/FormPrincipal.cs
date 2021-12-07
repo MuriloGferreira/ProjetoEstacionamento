@@ -44,7 +44,7 @@ namespace View
 
                 FormCliente formCliente = new FormCliente();
 
-                var repo = Repositorio.RepositorioGeral.Instancia;
+                //var repo = Repositorio.RepositorioGeral.Instancia;
 
                 if (formCliente.ShowDialog() == DialogResult.OK)
                 {

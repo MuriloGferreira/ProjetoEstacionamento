@@ -46,7 +46,14 @@ namespace DAO
 
             try
             {
-                String SQL = String.Format ("INSERT INTO cliente(cpf,nome) VALUE ({0},{1})",_obj.Nome, _obj.Cpf);
+                String SQL = String.Format("INSERT INTO cliente (" +
+                    "cpf," +
+                    "nome" +
+                    ") " +
+                    "VALUES ({0}, '{1}');",
+                    _obj.Cpf,
+                    _obj.Nome
+                    );
 
                 linhasAfetadas = BD.ExecutarIDU(SQL);
             }
@@ -96,12 +103,7 @@ namespace DAO
 
             try
             {
-                String SQL = String.Format("UPDATE cliente SET " +
-                            "nome = {0}," +
-                            " WHERE cpf = {1}",
-                            _obj.Nome,
-                            _obj.Cpf
-                           );
+                String SQL = String.Format("UPDATE cliente SET " + "nome = {0}," + " WHERE cpf = {1}", _obj.Nome, _obj.Cpf);
 
                 linhasAfetadas = BD.ExecutarIDU(SQL);
             }

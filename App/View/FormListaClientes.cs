@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Control;
+using control;
 using DAO;
 using Model;
 
@@ -37,5 +37,48 @@ namespace View
 
         }
 
+        private void GridViewClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnDeleteCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Pegar CPF do DataGridView / Selecionar CPF
+                //Vou ter meu CPF = Convert.ToInt64(dgvDados.Rows[0].Cells[0].Value.ToString());
+
+                //Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
+
+
+                //DataGridViewRow primeiraLinhaSelecionada = GridViewClientes.SelectedRows[0];
+                //DataGridViewCell primeiraColuna = primeiraLinhaSelecionada.Cells[0];
+                //Object valorDentroDaCelula = primeiraColuna.Value;
+
+                //String cpfSelecionadoString = valorDentroDaCelula.ToString();
+
+                //Int64 cpfSelecionado = Convert.ToInt64(cpfSelecionadoString);
+
+                Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
+
+                //Acionar o meu controller
+
+                ClienteCtrl clientecontrole = new ClienteCtrl();
+
+                if ((Boolean)clientecontrole.BD("deletar", cpfSelecionado))
+                {
+                    //CarregarGrid("");
+                    MessageBox.Show("Pessoa deletada com sucesso!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO AO DELETAR PESSOA: " + ex.Message);
+            }
+        }
+
+               
     }
 }
