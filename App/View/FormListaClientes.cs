@@ -22,13 +22,7 @@ namespace View
         {
             try
             {
-                var controller = new ClienteCtrl();
-                Dictionary<Int64, Cliente> mapa = (Dictionary<Int64, Cliente>)controller.BD("todos", null);
-
-                foreach(var cli in mapa.Values)
-                {
-                    GridViewClientes.Rows.Add(cli.Nome, cli.Cpf);
-                }
+                CarregarGrid();
             }
             catch (Exception ex)
             {
@@ -79,6 +73,20 @@ namespace View
             }
         }
 
-               
+
+        private void CarregarGrid()
+        {
+            GridViewClientes.Rows.Clear();
+
+            var controller = new ClienteCtrl();
+            Dictionary<Int64, Cliente> mapa = (Dictionary<Int64, Cliente>)controller.BD("todos", null);
+
+            foreach (var cli in mapa.Values)
+            {
+                GridViewClientes.Rows.Add(cli.Nome, cli.Cpf);
+            }
+        }
+
+
     }
 }
