@@ -3,3 +3,4 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\bin\Debug\Model.
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Model\obj\Debug\Model.csproj.AssemblyReference.cache

@@ -11,5 +11,6 @@ namespace Model
         public String Usuario { get; set; }
         public String Senha { get; set; }
 
+        public int PercentComplete { get; set; }
     }
 }
