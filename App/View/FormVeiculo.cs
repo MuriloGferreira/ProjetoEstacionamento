@@ -10,14 +10,26 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace View
 {
     public partial class FormVeiculo : Form
-    {   
+    {
+
         public FormVeiculo()
         {
             InitializeComponent();
+        }
+
+        public FormVeiculo(string placa, string nome, string modelo, string cor, string cliente)
+        {
+            InitializeComponent();
+            txtBoxVeiculoPlaca.Text = placa;
+            txtBoxVeiculoNome.Text = nome;
+            txtBoxVeiculoModelo.Text = modelo;
+            txtBoxVeiculoCor.Text = cor;
+            txtBoxVeiculoCliente.Text = cliente;
         }
 
         //private void FormVeiculo_Load(object sender, EventArgs e)
@@ -26,8 +38,8 @@ namespace View
         //    {
         //        if (this.Tag != null)
         //        {
-        //            btnAlterarCliente.Visible = true;
-        //            btnCadastrarCliente.Visible = false;
+        //            btnAlterarVeiculo.Visible = true;
+        //            btnCadastrarVeiculo.Visible = false;
         //            txtBoxClienteCpf.Enabled = false;
         //        }
         //    }
@@ -245,6 +257,11 @@ namespace View
             {
                 throw new Exception("ERRO AO ATUALIZAR VEÍCULO !" + ex.Message);
             }
-        }      
+        }
+
+        private void btnInserirImagemVeiculo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

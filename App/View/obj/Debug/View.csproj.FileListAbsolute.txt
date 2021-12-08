@@ -26,3 +26,4 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.cs
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.exe
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormParkingImages.resources

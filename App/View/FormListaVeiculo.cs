@@ -22,10 +22,10 @@ namespace View
         }
 
 
-        private void GridVeiculos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        //private void GridVeiculos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
 
-        }
+        //}
 
         private void FormListaVeiculo_Load_1(object sender, EventArgs e)
         {
@@ -108,15 +108,15 @@ namespace View
         {
             //String selectedRowCount = GridVeiculos.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
-            //String placaSelecionada = Convert.ToInt64(GridVeiculos.SelectedRows[0].Cells[0].Value.ToString());
+            String placaSelecionada = GridVeiculos.SelectedRows[0].Cells[0].Value.ToString();
 
-            //Veiculo veiculo = mapa[placaSelecionada];
+            Veiculo veiculo = mapa[placaSelecionada];
 
-            //FormVeiculo formveiculo = new FormVeiculo(veiculo.Placa, veiculo.Nome, veiculo.Modelo, veiculo.Cor, veiculo.Cliente);
+            FormVeiculo formveiculo = new FormVeiculo(veiculo.Placa, veiculo.Nome, veiculo.Modelo, veiculo.Cor, veiculo.Cliente);
 
-            //formveiculo.Tag = veiculo;
+            formveiculo.Tag = veiculo;
 
-            //formveiculo.ShowDialog();
+            formveiculo.ShowDialog();
         }
     }
 }

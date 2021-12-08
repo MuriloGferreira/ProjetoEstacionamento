@@ -138,7 +138,7 @@ namespace View
             // 
             // btnCadastrarVeiculo
             // 
-            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(87, 207);
+            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(91, 207);
             this.btnCadastrarVeiculo.Name = "btnCadastrarVeiculo";
             this.btnCadastrarVeiculo.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarVeiculo.TabIndex = 18;
@@ -148,7 +148,7 @@ namespace View
             // 
             // btnAlterarVeiculo
             // 
-            this.btnAlterarVeiculo.Location = new System.Drawing.Point(87, 236);
+            this.btnAlterarVeiculo.Location = new System.Drawing.Point(91, 236);
             this.btnAlterarVeiculo.Name = "btnAlterarVeiculo";
             this.btnAlterarVeiculo.Size = new System.Drawing.Size(96, 23);
             this.btnAlterarVeiculo.TabIndex = 21;
@@ -178,7 +178,7 @@ namespace View
             // labelProgressLogin
             // 
             this.labelProgressLogin.AutoSize = true;
-            this.labelProgressLogin.Location = new System.Drawing.Point(84, 282);
+            this.labelProgressLogin.Location = new System.Drawing.Point(98, 282);
             this.labelProgressLogin.Name = "labelProgressLogin";
             this.labelProgressLogin.Size = new System.Drawing.Size(89, 13);
             this.labelProgressLogin.TabIndex = 36;
@@ -187,9 +187,9 @@ namespace View
             // 
             // progressBarVeiculo
             // 
-            this.progressBarVeiculo.Location = new System.Drawing.Point(21, 298);
+            this.progressBarVeiculo.Location = new System.Drawing.Point(53, 298);
             this.progressBarVeiculo.Name = "progressBarVeiculo";
-            this.progressBarVeiculo.Size = new System.Drawing.Size(222, 18);
+            this.progressBarVeiculo.Size = new System.Drawing.Size(184, 18);
             this.progressBarVeiculo.TabIndex = 35;
             this.progressBarVeiculo.Visible = false;
             // 
@@ -197,7 +197,7 @@ namespace View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 341);
+            this.ClientSize = new System.Drawing.Size(278, 341);
             this.Controls.Add(this.labelProgressLogin);
             this.Controls.Add(this.progressBarVeiculo);
             this.Controls.Add(this.txtBoxVeiculoCliente);

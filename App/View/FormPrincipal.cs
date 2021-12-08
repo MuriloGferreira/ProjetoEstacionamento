@@ -129,5 +129,18 @@ namespace View
             }
             this.Show();
         }
+
+        private void btnShowPictures_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var showImages = new FormParkingImages();
+            if (showImages.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            this.Show();
+        }
+
+        
     }
 }

@@ -64,7 +64,7 @@ namespace View
             this.GridVeiculos.Name = "GridVeiculos";
             this.GridVeiculos.Size = new System.Drawing.Size(743, 383);
             this.GridVeiculos.TabIndex = 1;
-            this.GridVeiculos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVeiculos_CellContentClick);
+            //this.GridVeiculos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVeiculos_CellContentClick);
             this.GridVeiculos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVeiculos_CellContentDoubleClick);
             // 
             // Placa

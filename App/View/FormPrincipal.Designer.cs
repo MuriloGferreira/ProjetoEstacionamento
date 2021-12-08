@@ -39,12 +39,13 @@ namespace View
             this.btnListarVeiculosN = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnListarVaga = new System.Windows.Forms.Button();
+            this.btnShowPictures = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLoadCliente
             // 
-            this.btnLoadCliente.Location = new System.Drawing.Point(58, 68);
+            this.btnLoadCliente.Location = new System.Drawing.Point(96, 153);
             this.btnLoadCliente.Name = "btnLoadCliente";
             this.btnLoadCliente.Size = new System.Drawing.Size(216, 54);
             this.btnLoadCliente.TabIndex = 0;
@@ -54,7 +55,7 @@ namespace View
             // 
             // btnVeiculo
             // 
-            this.btnVeiculo.Location = new System.Drawing.Point(58, 188);
+            this.btnVeiculo.Location = new System.Drawing.Point(96, 273);
             this.btnVeiculo.Name = "btnVeiculo";
             this.btnVeiculo.Size = new System.Drawing.Size(216, 54);
             this.btnVeiculo.TabIndex = 1;
@@ -64,7 +65,7 @@ namespace View
             // 
             // btnLoadVaga
             // 
-            this.btnLoadVaga.Location = new System.Drawing.Point(58, 308);
+            this.btnLoadVaga.Location = new System.Drawing.Point(96, 393);
             this.btnLoadVaga.Name = "btnLoadVaga";
             this.btnLoadVaga.Size = new System.Drawing.Size(216, 54);
             this.btnLoadVaga.TabIndex = 2;
@@ -77,11 +78,11 @@ namespace View
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label4.Location = new System.Drawing.Point(96, 33);
+            this.label4.Location = new System.Drawing.Point(143, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 13);
+            this.label4.Size = new System.Drawing.Size(107, 13);
             this.label4.TabIndex = 30;
-            this.label4.Text = "OPÇÕES DE CADASTRO";
+            this.label4.Text = "MENU DE OPÇÕES:";
             // 
             // toolStripLabel2
             // 
@@ -104,13 +105,13 @@ namespace View
             this.UsuarioLogado});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(329, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(389, 25);
             this.toolStrip1.TabIndex = 31;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnListarVeiculosN
             // 
-            this.btnListarVeiculosN.Location = new System.Drawing.Point(58, 248);
+            this.btnListarVeiculosN.Location = new System.Drawing.Point(96, 333);
             this.btnListarVeiculosN.Name = "btnListarVeiculosN";
             this.btnListarVeiculosN.Size = new System.Drawing.Size(216, 54);
             this.btnListarVeiculosN.TabIndex = 3;
@@ -120,7 +121,7 @@ namespace View
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(58, 128);
+            this.button1.Location = new System.Drawing.Point(96, 213);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 54);
             this.button1.TabIndex = 32;
@@ -130,7 +131,7 @@ namespace View
             // 
             // btnListarVaga
             // 
-            this.btnListarVaga.Location = new System.Drawing.Point(58, 368);
+            this.btnListarVaga.Location = new System.Drawing.Point(96, 453);
             this.btnListarVaga.Name = "btnListarVaga";
             this.btnListarVaga.Size = new System.Drawing.Size(216, 54);
             this.btnListarVaga.TabIndex = 33;
@@ -138,11 +139,23 @@ namespace View
             this.btnListarVaga.UseVisualStyleBackColor = true;
             this.btnListarVaga.Click += new System.EventHandler(this.btnListarVaga_Click);
             // 
+            // btnShowPictures
+            // 
+            this.btnShowPictures.Location = new System.Drawing.Point(96, 93);
+            this.btnShowPictures.Name = "btnShowPictures";
+            this.btnShowPictures.Size = new System.Drawing.Size(216, 54);
+            this.btnShowPictures.TabIndex = 34;
+            this.btnShowPictures.Text = "MOSTRAR FOTOS DO ESTACIONAMENTO ";
+            this.btnShowPictures.UseVisualStyleBackColor = true;
+            this.btnShowPictures.Click += new System.EventHandler(this.btnShowPictures_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 439);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(406, 439);
+            this.Controls.Add(this.btnShowPictures);
             this.Controls.Add(this.btnListarVaga);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
@@ -173,5 +186,6 @@ namespace View
         private System.Windows.Forms.Button btnListarVeiculosN;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnListarVaga;
+        private System.Windows.Forms.Button btnShowPictures;
     }
 }
