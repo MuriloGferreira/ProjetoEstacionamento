@@ -39,6 +39,8 @@ namespace View
             this.btnCadastrarVaga = new System.Windows.Forms.Button();
             this.txtBoxVagaCliente = new System.Windows.Forms.TextBox();
             this.labelvagaCliente = new System.Windows.Forms.Label();
+            this.labelProgressVaga = new System.Windows.Forms.Label();
+            this.progressBarVaga = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label5
@@ -87,27 +89,27 @@ namespace View
             // 
             this.txtBoxVagaPatio.Location = new System.Drawing.Point(119, 93);
             this.txtBoxVagaPatio.Name = "txtBoxVagaPatio";
-            this.txtBoxVagaPatio.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxVagaPatio.Size = new System.Drawing.Size(113, 20);
             this.txtBoxVagaPatio.TabIndex = 22;
             // 
             // txtBoxVagaNum
             // 
             this.txtBoxVagaNum.Location = new System.Drawing.Point(119, 126);
             this.txtBoxVagaNum.Name = "txtBoxVagaNum";
-            this.txtBoxVagaNum.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxVagaNum.Size = new System.Drawing.Size(113, 20);
             this.txtBoxVagaNum.TabIndex = 23;
             // 
             // txtBoxVagaStatus
             // 
             this.txtBoxVagaStatus.Location = new System.Drawing.Point(119, 64);
             this.txtBoxVagaStatus.Name = "txtBoxVagaStatus";
-            this.txtBoxVagaStatus.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxVagaStatus.Size = new System.Drawing.Size(113, 20);
             this.txtBoxVagaStatus.TabIndex = 21;
             this.txtBoxVagaStatus.TextChanged += new System.EventHandler(this.txtBoxVagaStatus_TextChanged);
             // 
             // btnCadastrarVaga
             // 
-            this.btnCadastrarVaga.Location = new System.Drawing.Point(132, 163);
+            this.btnCadastrarVaga.Location = new System.Drawing.Point(130, 162);
             this.btnCadastrarVaga.Name = "btnCadastrarVaga";
             this.btnCadastrarVaga.Size = new System.Drawing.Size(87, 23);
             this.btnCadastrarVaga.TabIndex = 24;
@@ -119,7 +121,7 @@ namespace View
             // 
             this.txtBoxVagaCliente.Location = new System.Drawing.Point(119, 38);
             this.txtBoxVagaCliente.Name = "txtBoxVagaCliente";
-            this.txtBoxVagaCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxVagaCliente.Size = new System.Drawing.Size(113, 20);
             this.txtBoxVagaCliente.TabIndex = 26;
             // 
             // labelvagaCliente
@@ -132,11 +134,31 @@ namespace View
             this.labelvagaCliente.Text = "Nome do Cliente:";
             this.labelvagaCliente.UseWaitCursor = true;
             // 
+            // labelProgressVaga
+            // 
+            this.labelProgressVaga.AutoSize = true;
+            this.labelProgressVaga.Location = new System.Drawing.Point(115, 219);
+            this.labelProgressVaga.Name = "labelProgressVaga";
+            this.labelProgressVaga.Size = new System.Drawing.Size(89, 13);
+            this.labelProgressVaga.TabIndex = 38;
+            this.labelProgressVaga.Text = "Processando..0%";
+            this.labelProgressVaga.Visible = false;
+            // 
+            // progressBarVaga
+            // 
+            this.progressBarVaga.Location = new System.Drawing.Point(52, 235);
+            this.progressBarVaga.Name = "progressBarVaga";
+            this.progressBarVaga.Size = new System.Drawing.Size(222, 22);
+            this.progressBarVaga.TabIndex = 37;
+            this.progressBarVaga.Visible = false;
+            // 
             // FormVaga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 198);
+            this.ClientSize = new System.Drawing.Size(318, 278);
+            this.Controls.Add(this.labelProgressVaga);
+            this.Controls.Add(this.progressBarVaga);
             this.Controls.Add(this.txtBoxVagaCliente);
             this.Controls.Add(this.labelvagaCliente);
             this.Controls.Add(this.btnCadastrarVaga);
@@ -167,5 +189,7 @@ namespace View
         private System.Windows.Forms.Button btnCadastrarVaga;
         private System.Windows.Forms.TextBox txtBoxVagaCliente;
         private System.Windows.Forms.Label labelvagaCliente;
+        private System.Windows.Forms.Label labelProgressVaga;
+        private System.Windows.Forms.ProgressBar progressBarVaga;
     }
 }

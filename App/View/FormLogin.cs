@@ -32,23 +32,7 @@ namespace View
         {
 
         }
-
-
-        private Task ProcessData(List<string> list, IProgress<ProgressReport> progress)
-        {
-            int index = 1;
-            int totalProcess = list.Count;
-            var progressReport = new ProgressReport();
-
-            return Task.Run(() => {
-                for (int i=0; i < totalProcess; i++){
-                    progressReport.PercentComplete = index++ * 100 / totalProcess;
-                    progress.Report(progressReport);
-                    Thread.Sleep(10);//used to simulate length of operation 
-                }
-            });
-        }
-
+              
         private async void btnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtBoxLoginUsuario.Text))
@@ -64,23 +48,6 @@ namespace View
 
             logins.Usuario = txtBoxLoginUsuario.Text;
             logins.Senha = txtBoxLoginSenha.Text;
-
-
-            //ProgressBar
-            List<string> list = new List<string>();
-            for (int i = 0; i < 1000; i++)
-                list.Add(i.ToString());
-
-            labelProgressLogin.Text = "Working...";
-            var progress = new Progress<ProgressReport>();
-            progress.ProgressChanged += (o, report) => {
-                labelProgressLogin.Text = string.Format("Processing...{0}%", report.PercentComplete)
-                progressBar.Value = report.PercentComplete;
-                progressBar.Update();
-            };
-            await ProcessData(list, progress);
-            labelProgressLogin.Text = "Done!";
-
 
             if (ValidarLogin(logins))
             {

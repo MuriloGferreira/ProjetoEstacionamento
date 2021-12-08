@@ -36,13 +36,11 @@ namespace View
             this.labelSenha = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblMsg = new System.Windows.Forms.Label();
-            this.progressBarLogin = new System.Windows.Forms.ProgressBar();
-            this.labelProgressLogin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBoxLoginUsuario
             // 
-            this.txtBoxLoginUsuario.Location = new System.Drawing.Point(110, 83);
+            this.txtBoxLoginUsuario.Location = new System.Drawing.Point(116, 117);
             this.txtBoxLoginUsuario.Name = "txtBoxLoginUsuario";
             this.txtBoxLoginUsuario.Size = new System.Drawing.Size(166, 20);
             this.txtBoxLoginUsuario.TabIndex = 2;
@@ -51,7 +49,7 @@ namespace View
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(156, 135);
+            this.btnLogin.Location = new System.Drawing.Point(157, 195);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -61,7 +59,7 @@ namespace View
             // 
             // txtBoxLoginSenha
             // 
-            this.txtBoxLoginSenha.Location = new System.Drawing.Point(110, 109);
+            this.txtBoxLoginSenha.Location = new System.Drawing.Point(116, 143);
             this.txtBoxLoginSenha.Name = "txtBoxLoginSenha";
             this.txtBoxLoginSenha.Size = new System.Drawing.Size(166, 20);
             this.txtBoxLoginSenha.TabIndex = 5;
@@ -70,7 +68,7 @@ namespace View
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(58, 86);
+            this.labelUsuario.Location = new System.Drawing.Point(64, 120);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(46, 13);
             this.labelUsuario.TabIndex = 7;
@@ -80,7 +78,7 @@ namespace View
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
-            this.labelSenha.Location = new System.Drawing.Point(63, 112);
+            this.labelSenha.Location = new System.Drawing.Point(69, 146);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(41, 13);
             this.labelSenha.TabIndex = 8;
@@ -109,29 +107,11 @@ namespace View
             this.lblMsg.Text = "Usuário ou senha inválidos!!!";
             this.lblMsg.Visible = false;
             // 
-            // progressBarLogin
-            // 
-            this.progressBarLogin.Location = new System.Drawing.Point(22, 208);
-            this.progressBarLogin.Name = "progressBarLogin";
-            this.progressBarLogin.Size = new System.Drawing.Size(338, 23);
-            this.progressBarLogin.TabIndex = 31;
-            // 
-            // labelProgressLogin
-            // 
-            this.labelProgressLogin.AutoSize = true;
-            this.labelProgressLogin.Location = new System.Drawing.Point(153, 181);
-            this.labelProgressLogin.Name = "labelProgressLogin";
-            this.labelProgressLogin.Size = new System.Drawing.Size(89, 13);
-            this.labelProgressLogin.TabIndex = 32;
-            this.labelProgressLogin.Text = "Processando..0%";
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 289);
-            this.Controls.Add(this.labelProgressLogin);
-            this.Controls.Add(this.progressBarLogin);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelSenha);
@@ -155,8 +135,6 @@ namespace View
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMsg;
-        private System.Windows.Forms.ProgressBar progressBarLogin;
-        private System.Windows.Forms.Label labelProgressLogin;
     }
 }
 

@@ -36,13 +36,15 @@ namespace View
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAlterarCliente = new System.Windows.Forms.Button();
+            this.labelProgressCliente = new System.Windows.Forms.Label();
+            this.progressBarCliente = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // txtBoxClienteCpf
             // 
             this.txtBoxClienteCpf.Location = new System.Drawing.Point(76, 58);
             this.txtBoxClienteCpf.Name = "txtBoxClienteCpf";
-            this.txtBoxClienteCpf.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxClienteCpf.Size = new System.Drawing.Size(120, 20);
             this.txtBoxClienteCpf.TabIndex = 0;
             this.txtBoxClienteCpf.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -50,7 +52,7 @@ namespace View
             // 
             this.txtBoxClienteNome.Location = new System.Drawing.Point(76, 87);
             this.txtBoxClienteNome.Name = "txtBoxClienteNome";
-            this.txtBoxClienteNome.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxClienteNome.Size = new System.Drawing.Size(120, 20);
             this.txtBoxClienteNome.TabIndex = 1;
             this.txtBoxClienteNome.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -76,7 +78,7 @@ namespace View
             // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 138);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(86, 127);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarCliente.TabIndex = 19;
@@ -97,7 +99,7 @@ namespace View
             // 
             // btnAlterarCliente
             // 
-            this.btnAlterarCliente.Location = new System.Drawing.Point(76, 167);
+            this.btnAlterarCliente.Location = new System.Drawing.Point(86, 156);
             this.btnAlterarCliente.Name = "btnAlterarCliente";
             this.btnAlterarCliente.Size = new System.Drawing.Size(96, 23);
             this.btnAlterarCliente.TabIndex = 29;
@@ -106,11 +108,31 @@ namespace View
             this.btnAlterarCliente.Visible = false;
             this.btnAlterarCliente.Click += new System.EventHandler(this.btnAlterarCliente_Click);
             // 
+            // labelProgressCliente
+            // 
+            this.labelProgressCliente.AutoSize = true;
+            this.labelProgressCliente.Location = new System.Drawing.Point(83, 210);
+            this.labelProgressCliente.Name = "labelProgressCliente";
+            this.labelProgressCliente.Size = new System.Drawing.Size(89, 13);
+            this.labelProgressCliente.TabIndex = 38;
+            this.labelProgressCliente.Text = "Processando..0%";
+            this.labelProgressCliente.Visible = false;
+            // 
+            // progressBarCliente
+            // 
+            this.progressBarCliente.Location = new System.Drawing.Point(12, 226);
+            this.progressBarCliente.Name = "progressBarCliente";
+            this.progressBarCliente.Size = new System.Drawing.Size(237, 18);
+            this.progressBarCliente.TabIndex = 37;
+            this.progressBarCliente.Visible = false;
+            // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 202);
+            this.ClientSize = new System.Drawing.Size(261, 256);
+            this.Controls.Add(this.labelProgressCliente);
+            this.Controls.Add(this.progressBarCliente);
             this.Controls.Add(this.btnAlterarCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCadastrarCliente);
@@ -135,5 +157,7 @@ namespace View
         private System.Windows.Forms.Button btnCadastrarCliente;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAlterarCliente;
+        private System.Windows.Forms.Label labelProgressCliente;
+        private System.Windows.Forms.ProgressBar progressBarCliente;
     }
 }

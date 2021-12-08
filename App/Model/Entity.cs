@@ -10,5 +10,6 @@ namespace Model
     {
         public Int32 Id { get; set; }
 
+        public int PercentComplete { get; set; }
     }
 }

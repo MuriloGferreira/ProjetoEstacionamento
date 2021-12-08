@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -99,8 +100,26 @@ namespace View
 
         }
 
-        private void btnCadastrarVeiculo_Click(object sender, EventArgs e)
+        private Task ProcessData(List<string> list, IProgress<Veiculo> progress)
         {
+            int index = 1;
+            int totalProcess = list.Count;
+            var veiculoProgress = new Veiculo();
+
+            return Task.Run(() => {
+                for (int i = 0; i < totalProcess; i++)
+                {
+                    veiculoProgress.PercentComplete = index++ * 100 / totalProcess;
+                    progress.Report(veiculoProgress);
+                    Thread.Sleep(10);//used to simulate length of operation 
+                }
+            });
+        }
+
+        private async void btnCadastrarVeiculo_Click(object sender, EventArgs e)
+        {
+            labelProgressLogin.Visible = true;
+            progressBarVeiculo.Visible = true;
             try
             {
                 if (string.IsNullOrEmpty(txtBoxVeiculoPlaca.Text))
@@ -120,13 +139,28 @@ namespace View
                     return;
                 }
 
+                ////ProgressBar
+                List<string> list = new List<string>();
+                for (int i = 0; i < 100; i++)
+                    list.Add(i.ToString());
+                labelProgressLogin.Text = "Working...";
+                var progress = new Progress<Veiculo>();
+                progress.ProgressChanged += (o, report) => {
+                    labelProgressLogin.Text = string.Format("Processando...{0}%", report.PercentComplete);
+                    progressBarVeiculo.Value = report.PercentComplete;
+                    progressBarVeiculo.Update();
+                };
+                await ProcessData(list, progress);
+                labelProgressLogin.Text = "Cadastro completo!";
+                ////ProgressBar
+
                 Veiculo veiculo = CarregarObjetoVeiculoDoForm();
 
                 VeiculoCtrl clientecontrole = new VeiculoCtrl();
 
                 if ((Boolean)clientecontrole.BD("inserir", veiculo))
                 {
-                    MessageBox.Show("VEICULO CADASTRADA COM SUCESSO !");
+                    MessageBox.Show("VEICULO CADASTRADO COM SUCESSO !");
                 }
                 this.Close();
             }
@@ -194,7 +228,7 @@ namespace View
                 {
                     return;
                 }
-
+                                
                 Veiculo veiculo = CarregarObjetoVeiculoDoForm();
 
                 VeiculoCtrl veiculocontrole = new VeiculoCtrl();
@@ -211,7 +245,6 @@ namespace View
             {
                 throw new Exception("ERRO AO ATUALIZAR VEÍCULO !" + ex.Message);
             }
-        }
-
+        }      
     }
 }

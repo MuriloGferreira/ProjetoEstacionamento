@@ -44,6 +44,8 @@ namespace View
             this.btnAlterarVeiculo = new System.Windows.Forms.Button();
             this.txtBoxVeiculoCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.labelProgressLogin = new System.Windows.Forms.Label();
+            this.progressBarVeiculo = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,7 +138,7 @@ namespace View
             // 
             // btnCadastrarVeiculo
             // 
-            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(77, 236);
+            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(87, 207);
             this.btnCadastrarVeiculo.Name = "btnCadastrarVeiculo";
             this.btnCadastrarVeiculo.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarVeiculo.TabIndex = 18;
@@ -146,7 +148,7 @@ namespace View
             // 
             // btnAlterarVeiculo
             // 
-            this.btnAlterarVeiculo.Location = new System.Drawing.Point(77, 265);
+            this.btnAlterarVeiculo.Location = new System.Drawing.Point(87, 236);
             this.btnAlterarVeiculo.Name = "btnAlterarVeiculo";
             this.btnAlterarVeiculo.Size = new System.Drawing.Size(96, 23);
             this.btnAlterarVeiculo.TabIndex = 21;
@@ -173,11 +175,31 @@ namespace View
             this.label6.Text = "Cliente:";
             this.label6.UseWaitCursor = true;
             // 
+            // labelProgressLogin
+            // 
+            this.labelProgressLogin.AutoSize = true;
+            this.labelProgressLogin.Location = new System.Drawing.Point(84, 282);
+            this.labelProgressLogin.Name = "labelProgressLogin";
+            this.labelProgressLogin.Size = new System.Drawing.Size(89, 13);
+            this.labelProgressLogin.TabIndex = 36;
+            this.labelProgressLogin.Text = "Processando..0%";
+            this.labelProgressLogin.Visible = false;
+            // 
+            // progressBarVeiculo
+            // 
+            this.progressBarVeiculo.Location = new System.Drawing.Point(21, 298);
+            this.progressBarVeiculo.Name = "progressBarVeiculo";
+            this.progressBarVeiculo.Size = new System.Drawing.Size(222, 18);
+            this.progressBarVeiculo.TabIndex = 35;
+            this.progressBarVeiculo.Visible = false;
+            // 
             // FormVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 300);
+            this.ClientSize = new System.Drawing.Size(267, 341);
+            this.Controls.Add(this.labelProgressLogin);
+            this.Controls.Add(this.progressBarVeiculo);
             this.Controls.Add(this.txtBoxVeiculoCliente);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAlterarVeiculo);
@@ -215,5 +237,7 @@ namespace View
         private System.Windows.Forms.Button btnAlterarVeiculo;
         private System.Windows.Forms.TextBox txtBoxVeiculoCliente;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelProgressLogin;
+        private System.Windows.Forms.ProgressBar progressBarVeiculo;
     }
 }

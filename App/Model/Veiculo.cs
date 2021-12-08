@@ -17,6 +17,6 @@ namespace Model
         public string Cor { get; set; }
 
         public string Cliente { get; set; }
-
+               
     }
 }

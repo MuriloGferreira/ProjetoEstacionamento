@@ -9,8 +9,8 @@ namespace Model
     public class Login : Entity
     {
         public String Usuario { get; set; }
+
         public String Senha { get; set; }
 
-        public int PercentComplete { get; set; }
     }
 }

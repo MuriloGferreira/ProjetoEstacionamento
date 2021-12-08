@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -81,8 +82,26 @@ namespace View
 
         }
 
-        private void btnCadastrarCliente_Click(object sender, EventArgs e)
+        private Task ProcessData(List<string> list, IProgress<Cliente> progress)
         {
+            int index = 1;
+            int totalProcess = list.Count;
+            var clienteProgress = new Cliente();
+
+            return Task.Run(() => {
+                for (int i = 0; i < totalProcess; i++)
+                {
+                    clienteProgress.PercentComplete = index++ * 100 / totalProcess;
+                    progress.Report(clienteProgress);
+                    Thread.Sleep(10);//used to simulate length of operation 
+                }
+            });
+        }
+
+        private async void btnCadastrarCliente_Click(object sender, EventArgs e)
+        {
+            labelProgressCliente.Visible = true;
+            progressBarCliente.Visible = true;
             try
             {
                 if (string.IsNullOrEmpty(txtBoxClienteCpf.Text))
@@ -94,8 +113,22 @@ namespace View
                     return;
                 }
 
-                Cliente cliente = CarregarObjetoClienteDoForm();
+                ////ProgressBar
+                List<string> list = new List<string>();
+                for (int i = 0; i < 100; i++)
+                    list.Add(i.ToString());
+                labelProgressCliente.Text = "Working...";
+                var progress = new Progress<Cliente>();
+                progress.ProgressChanged += (o, report) => {
+                    labelProgressCliente.Text = string.Format("Processando...{0}%", report.PercentComplete);
+                    progressBarCliente.Value = report.PercentComplete;
+                    progressBarCliente.Update();
+                };
+                await ProcessData(list, progress);
+                labelProgressCliente.Text = "Cadastro completo!";
+                ////ProgressBar
 
+                Cliente cliente = CarregarObjetoClienteDoForm();
                 ClienteCtrl clientecontrole = new ClienteCtrl();
 
                 if((Boolean)clientecontrole.BD("inserir", cliente))
@@ -116,10 +149,6 @@ namespace View
             Cliente cliente = new Cliente();
             try
             {
-                //String cpf_sem_tracos = mtbCPF.Text.Replace("-", "");
-                //String cpf_sem_pontos = cpf_sem_tracos.Replace(".", "");
-                //p.CPF = Int64.Parse(cpf_sem_pontos);
-
                 cliente.Cpf = Convert.ToInt64(txtBoxClienteCpf.Text.Replace(".", "").Replace("-", ""));
                 cliente.Nome = txtBoxClienteNome.Text;
 
