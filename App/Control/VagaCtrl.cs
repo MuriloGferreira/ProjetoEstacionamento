@@ -16,18 +16,12 @@ namespace control
 
             switch (_comando)
             {
-                //case "inserir":
-                //    return vaga.Inserir((Vaga)_parametro);
-                //case "deletar":
-                //    return vaga.Deletar((Int64)_parametro);
-                //case "alterar":
-                //    return vaga.Alterar((Vaga)_parametro);
-                //case "todos":
-                //    return vaga.ListarVagas();
-                //case "Evento":
-                //    return ClienteDAO.BuscarTodasPornome((int)_parametro);
-                //case "filtro":
-                //    return ClienteDAO.BuscarListaFiltrada(_parametro.ToString());
+                case "inserir":
+                    return vaga.Inserir((Vaga)_parametro);
+                case "deletar":
+                    return vaga.Deletar((String)_parametro);
+                case "todos":
+                    return vaga.ListarVagas();
                 default:
                     return "Comando inválido!";
             }

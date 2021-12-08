@@ -14,6 +14,7 @@ namespace View
         {
             InitializeComponent();
         }
+
         private void FormListaClientes_Load(object sender, EventArgs e)
         {
             ListarClientes();

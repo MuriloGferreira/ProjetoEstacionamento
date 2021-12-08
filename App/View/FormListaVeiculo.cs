@@ -61,7 +61,7 @@ namespace View
                 DataGridViewCell primeiraColuna = primeiraLinhaVeiculoSelecionada.Cells[0];
                 Object valorDentroDaCelula = primeiraColuna.Value;
 
-                String numeroSelecionadoString = valorDentroDaCelula.ToString();
+                String placaSelecionadoString = valorDentroDaCelula.ToString();
 
                 //Int64 cpfSelecionado = Convert.ToInt64(numeroSelecionadoString);
 
@@ -71,7 +71,7 @@ namespace View
 
                 VeiculoCtrl veiculocontrole = new VeiculoCtrl();
 
-                if ((Boolean)veiculocontrole.BD("deletar", numeroSelecionadoString))
+                if ((Boolean)veiculocontrole.BD("deletar", placaSelecionadoString))
                 {
                     CarregarGridVeiculos();
                     MessageBox.Show("Veiculo deletado com sucesso!");

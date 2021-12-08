@@ -29,26 +29,29 @@ namespace View
         /// </summary>
         private void InitializeComponent()
         {
-            this.GridVeiculos = new System.Windows.Forms.DataGridView();
+            this.GridVagas = new System.Windows.Forms.DataGridView();
             this.numerovaga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomevaga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patiovaga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusvaga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.GridVeiculos)).BeginInit();
+            this.btnDeletarVaga = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.GridVagas)).BeginInit();
             this.SuspendLayout();
             // 
-            // GridVeiculos
+            // GridVagas
             // 
-            this.GridVeiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridVeiculos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.GridVagas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridVagas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numerovaga,
             this.nomevaga,
             this.patiovaga,
             this.statusvaga});
-            this.GridVeiculos.Location = new System.Drawing.Point(57, 34);
-            this.GridVeiculos.Name = "GridVeiculos";
-            this.GridVeiculos.Size = new System.Drawing.Size(643, 383);
-            this.GridVeiculos.TabIndex = 2;
+            this.GridVagas.Location = new System.Drawing.Point(57, 34);
+            this.GridVagas.Name = "GridVagas";
+            this.GridVagas.Size = new System.Drawing.Size(643, 377);
+            this.GridVagas.TabIndex = 2;
+            this.GridVagas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVeiculos_CellContentClick);
+            this.GridVagas.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridVagas_CellContentDoubleClick);
             // 
             // numerovaga
             // 
@@ -74,25 +77,38 @@ namespace View
             this.statusvaga.Name = "statusvaga";
             this.statusvaga.Width = 150;
             // 
+            // btnDeletarVaga
+            // 
+            this.btnDeletarVaga.Location = new System.Drawing.Point(557, 417);
+            this.btnDeletarVaga.Name = "btnDeletarVaga";
+            this.btnDeletarVaga.Size = new System.Drawing.Size(143, 37);
+            this.btnDeletarVaga.TabIndex = 3;
+            this.btnDeletarVaga.Text = "Liberar vaga";
+            this.btnDeletarVaga.UseVisualStyleBackColor = true;
+            this.btnDeletarVaga.Click += new System.EventHandler(this.btnDeletarVaga_Click);
+            // 
             // FormListaVagas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 450);
-            this.Controls.Add(this.GridVeiculos);
+            this.ClientSize = new System.Drawing.Size(767, 458);
+            this.Controls.Add(this.btnDeletarVaga);
+            this.Controls.Add(this.GridVagas);
             this.Name = "FormListaVagas";
             this.Text = "FormListaVagas";
-            ((System.ComponentModel.ISupportInitialize)(this.GridVeiculos)).EndInit();
+            this.Load += new System.EventHandler(this.FormListaVagas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.GridVagas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView GridVeiculos;
+        private System.Windows.Forms.DataGridView GridVagas;
         private System.Windows.Forms.DataGridViewTextBoxColumn numerovaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomevaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn patiovaga;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusvaga;
+        private System.Windows.Forms.Button btnDeletarVaga;
     }
 }

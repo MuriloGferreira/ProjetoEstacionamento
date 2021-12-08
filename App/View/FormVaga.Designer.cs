@@ -37,12 +37,14 @@ namespace View
             this.txtBoxVagaNum = new System.Windows.Forms.TextBox();
             this.txtBoxVagaStatus = new System.Windows.Forms.TextBox();
             this.btnCadastrarVaga = new System.Windows.Forms.Button();
+            this.txtBoxVagaCliente = new System.Windows.Forms.TextBox();
+            this.labelvagaCliente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(71, 89);
+            this.label5.Location = new System.Drawing.Point(71, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 13);
             this.label5.TabIndex = 19;
@@ -52,7 +54,7 @@ namespace View
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 58);
+            this.label3.Location = new System.Drawing.Point(60, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 18;
@@ -62,7 +64,7 @@ namespace View
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 121);
+            this.label1.Location = new System.Drawing.Point(5, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 16;
@@ -83,21 +85,21 @@ namespace View
             // 
             // txtBoxVagaPatio
             // 
-            this.txtBoxVagaPatio.Location = new System.Drawing.Point(119, 84);
+            this.txtBoxVagaPatio.Location = new System.Drawing.Point(119, 93);
             this.txtBoxVagaPatio.Name = "txtBoxVagaPatio";
             this.txtBoxVagaPatio.Size = new System.Drawing.Size(100, 20);
             this.txtBoxVagaPatio.TabIndex = 22;
             // 
             // txtBoxVagaNum
             // 
-            this.txtBoxVagaNum.Location = new System.Drawing.Point(119, 117);
+            this.txtBoxVagaNum.Location = new System.Drawing.Point(119, 126);
             this.txtBoxVagaNum.Name = "txtBoxVagaNum";
             this.txtBoxVagaNum.Size = new System.Drawing.Size(100, 20);
             this.txtBoxVagaNum.TabIndex = 23;
             // 
             // txtBoxVagaStatus
             // 
-            this.txtBoxVagaStatus.Location = new System.Drawing.Point(119, 55);
+            this.txtBoxVagaStatus.Location = new System.Drawing.Point(119, 64);
             this.txtBoxVagaStatus.Name = "txtBoxVagaStatus";
             this.txtBoxVagaStatus.Size = new System.Drawing.Size(100, 20);
             this.txtBoxVagaStatus.TabIndex = 21;
@@ -113,11 +115,30 @@ namespace View
             this.btnCadastrarVaga.UseVisualStyleBackColor = true;
             this.btnCadastrarVaga.Click += new System.EventHandler(this.btnCadastrarVaga_Click);
             // 
+            // txtBoxVagaCliente
+            // 
+            this.txtBoxVagaCliente.Location = new System.Drawing.Point(119, 38);
+            this.txtBoxVagaCliente.Name = "txtBoxVagaCliente";
+            this.txtBoxVagaCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxVagaCliente.TabIndex = 26;
+            // 
+            // labelvagaCliente
+            // 
+            this.labelvagaCliente.AutoSize = true;
+            this.labelvagaCliente.Location = new System.Drawing.Point(25, 41);
+            this.labelvagaCliente.Name = "labelvagaCliente";
+            this.labelvagaCliente.Size = new System.Drawing.Size(88, 13);
+            this.labelvagaCliente.TabIndex = 25;
+            this.labelvagaCliente.Text = "Nome do Cliente:";
+            this.labelvagaCliente.UseWaitCursor = true;
+            // 
             // FormVaga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 198);
+            this.Controls.Add(this.txtBoxVagaCliente);
+            this.Controls.Add(this.labelvagaCliente);
             this.Controls.Add(this.btnCadastrarVaga);
             this.Controls.Add(this.txtBoxVagaNum);
             this.Controls.Add(this.txtBoxVagaPatio);
@@ -144,5 +165,7 @@ namespace View
         private System.Windows.Forms.TextBox txtBoxVagaNum;
         private System.Windows.Forms.TextBox txtBoxVagaStatus;
         private System.Windows.Forms.Button btnCadastrarVaga;
+        private System.Windows.Forms.TextBox txtBoxVagaCliente;
+        private System.Windows.Forms.Label labelvagaCliente;
     }
 }

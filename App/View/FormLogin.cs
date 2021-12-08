@@ -32,14 +32,13 @@ namespace View
         {
 
         }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
             if (string.IsNullOrEmpty(txtBoxLoginUsuario.Text))
             {
                 return;
             }
-
             if (string.IsNullOrEmpty(txtBoxLoginSenha.Text))
             {
                 return;

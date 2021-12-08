@@ -13,6 +13,7 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\bin\Debug\Reposit
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormCliente.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaClientes.resources
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVagas.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVeiculo.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormLogin.resources
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormPatio.resources
@@ -25,4 +26,3 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.cs
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.exe
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.pdb
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\View\obj\Debug\View.FormListaVagas.resources
