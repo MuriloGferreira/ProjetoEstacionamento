@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="VeiculoDAO.cs" />
+    <Compile Include="VagaDAO.cs" />
     <Compile Include="ClienteDAO.cs" />
     <Compile Include="BD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,5 +1,3 @@
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.AssemblyReference.cache
-C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\Control.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\Control.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\DAO.dll
@@ -7,6 +5,8 @@ C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\Mode
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\System.Data.SqlServerCe.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\DAO.pdb
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\bin\Debug\Model.pdb
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.AssemblyReference.cache
+C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.csproj.CopyComplete
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.dll
 C:\Users\muril\Desktop\Projetos\ProjetoEstacionamento\App\Control\obj\Debug\Control.pdb

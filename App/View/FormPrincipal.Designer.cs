@@ -38,12 +38,13 @@ namespace View
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnListarVeiculosN = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnListarVaga = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLoadCliente
             // 
-            this.btnLoadCliente.Location = new System.Drawing.Point(52, 84);
+            this.btnLoadCliente.Location = new System.Drawing.Point(58, 68);
             this.btnLoadCliente.Name = "btnLoadCliente";
             this.btnLoadCliente.Size = new System.Drawing.Size(216, 54);
             this.btnLoadCliente.TabIndex = 0;
@@ -53,7 +54,7 @@ namespace View
             // 
             // btnVeiculo
             // 
-            this.btnVeiculo.Location = new System.Drawing.Point(52, 204);
+            this.btnVeiculo.Location = new System.Drawing.Point(58, 188);
             this.btnVeiculo.Name = "btnVeiculo";
             this.btnVeiculo.Size = new System.Drawing.Size(216, 54);
             this.btnVeiculo.TabIndex = 1;
@@ -63,7 +64,7 @@ namespace View
             // 
             // btnLoadVaga
             // 
-            this.btnLoadVaga.Location = new System.Drawing.Point(52, 324);
+            this.btnLoadVaga.Location = new System.Drawing.Point(58, 308);
             this.btnLoadVaga.Name = "btnLoadVaga";
             this.btnLoadVaga.Size = new System.Drawing.Size(216, 54);
             this.btnLoadVaga.TabIndex = 2;
@@ -109,7 +110,7 @@ namespace View
             // 
             // btnListarVeiculosN
             // 
-            this.btnListarVeiculosN.Location = new System.Drawing.Point(52, 264);
+            this.btnListarVeiculosN.Location = new System.Drawing.Point(58, 248);
             this.btnListarVeiculosN.Name = "btnListarVeiculosN";
             this.btnListarVeiculosN.Size = new System.Drawing.Size(216, 54);
             this.btnListarVeiculosN.TabIndex = 3;
@@ -119,7 +120,7 @@ namespace View
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(52, 144);
+            this.button1.Location = new System.Drawing.Point(58, 128);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 54);
             this.button1.TabIndex = 32;
@@ -127,11 +128,22 @@ namespace View
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnListarClientes_Click);
             // 
+            // btnListarVaga
+            // 
+            this.btnListarVaga.Location = new System.Drawing.Point(58, 368);
+            this.btnListarVaga.Name = "btnListarVaga";
+            this.btnListarVaga.Size = new System.Drawing.Size(216, 54);
+            this.btnListarVaga.TabIndex = 33;
+            this.btnListarVaga.Text = "LISTAR VEICULOS NA VAGA";
+            this.btnListarVaga.UseVisualStyleBackColor = true;
+            this.btnListarVaga.Click += new System.EventHandler(this.btnListarVaga_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 392);
+            this.ClientSize = new System.Drawing.Size(329, 439);
+            this.Controls.Add(this.btnListarVaga);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label4);
@@ -160,5 +172,6 @@ namespace View
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Button btnListarVeiculosN;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnListarVaga;
     }
 }

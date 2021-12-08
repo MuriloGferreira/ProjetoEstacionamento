@@ -14,6 +14,8 @@ namespace View
 {
     public partial class FormListaVeiculo : Form
     {
+        private Dictionary<String, Veiculo> mapa;
+
         public FormListaVeiculo()
         {
             InitializeComponent();
@@ -29,10 +31,7 @@ namespace View
         {
             try
             {
-                foreach (Veiculo v in Repositorio.RepositorioGeral.RepositorioGeralVeiculo)
-                {
-                    GridVeiculos.Rows.Add(v.Placa, v.Modelo, v.Cor);
-                }
+                ListarVeiculos();
             }
             catch (Exception ex)
             {
@@ -40,45 +39,48 @@ namespace View
             }
         }
 
+        private void ListarVeiculos()
+        {
+            try
+            {
+                CarregarGridVeiculos();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO LISTAR VEICULO" + ex.Message);
+            }
+
+        }
+
+
         private void btnDeletarVeículo_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                DataGridViewRow primeiraLinhaVeiculoSelecionada = GridVeiculos.SelectedRows[0];
+                DataGridViewCell primeiraColuna = primeiraLinhaVeiculoSelecionada.Cells[0];
+                Object valorDentroDaCelula = primeiraColuna.Value;
 
-            //try
-            //{
-            //    DataGridViewRow primeiraLinhaSelecionada = GridViewClientes.SelectedRows[0];
-            //    DataGridViewCell primeiraColuna = primeiraLinhaSelecionada.Cells[0];
-            //    Object valorDentroDaCelula = primeiraColuna.Value;
+                String numeroSelecionadoString = valorDentroDaCelula.ToString();
 
-            //    String cpfSelecionadoString = valorDentroDaCelula.ToString();
-            //    Int64 cpfSelecionado = Convert.ToInt64(cpfSelecionadoString);
+                //Int64 cpfSelecionado = Convert.ToInt64(numeroSelecionadoString);
 
+                //Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
 
+                //Acionar o meu controller
 
-            //    ClienteCtrl clientecontrole = new ClienteCtrl();
+                VeiculoCtrl veiculocontrole = new VeiculoCtrl();
 
-            //    if ((Boolean)clientecontrole.BD("deletar", null))
-            //    {
-            //        MessageBox.Show("PESSOA DELETADA COM SUCESSO !");
-            //    }
-
-            //    this.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw new Exception("ERRO AO DELETADAR CLIENTE" + ex.Message);
-            //}
-
-            //            DataGridViewRow row = this.GridVeiculos.SelectedRows[0];
-            //            for (var i = 0; i < Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Count; i++)
-            //            {
-            //// Comparação de referência não intencional possível; para obter uma comparação de valor, converta o lado esquerdo para o tipo "string"
-            //                if (row.Cells["Placa"].Value == Repositorio.RepositorioGeral.RepositorioGeralVeiculo[i].Placa) {
-            //// Comparação de referência não intencional possível; para obter uma comparação de valor, converta o lado esquerdo para o tipo "string"
-            //                    Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Remove(Repositorio.RepositorioGeral.RepositorioGeralVeiculo[i]);
-            //                    GridVeiculos.Rows.Remove(row);
-            //                }
-            //            }
-            //            GridVeiculos.Update();
+                if ((Boolean)veiculocontrole.BD("deletar", numeroSelecionadoString))
+                {
+                    CarregarGridVeiculos();
+                    MessageBox.Show("Veiculo deletado com sucesso!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERRO AO DELETAR VEICULO! " + ex.Message);
+            }
         }
 
         private void btnVoltarPrincipal_Click(object sender, EventArgs e)
@@ -86,6 +88,35 @@ namespace View
             this.Hide();
 
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void CarregarGridVeiculos()
+        {
+            GridVeiculos.Rows.Clear();
+
+            var controllerVeiculo = new VeiculoCtrl();
+            mapa = (Dictionary<String, Veiculo>)controllerVeiculo.BD("todos", null);
+
+            foreach (var veiculo in mapa.Values)
+            {
+                GridVeiculos.Rows.Add(veiculo.Placa, veiculo.Nome, veiculo.Modelo, veiculo.Cor, veiculo.Cliente);
+            }
+        }
+
+       
+        private void GridVeiculos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //String selectedRowCount = GridVeiculos.Rows.GetRowCount(DataGridViewElementStates.Selected);
+
+            //String placaSelecionada = Convert.ToInt64(GridVeiculos.SelectedRows[0].Cells[0].Value.ToString());
+
+            //Veiculo veiculo = mapa[placaSelecionada];
+
+            //FormVeiculo formveiculo = new FormVeiculo(veiculo.Placa, veiculo.Nome, veiculo.Modelo, veiculo.Cor, veiculo.Cliente);
+
+            //formveiculo.Tag = veiculo;
+
+            //formveiculo.ShowDialog();
         }
     }
 }

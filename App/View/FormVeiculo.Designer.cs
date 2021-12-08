@@ -41,16 +41,16 @@ namespace View
             this.label4 = new System.Windows.Forms.Label();
             this.btnCadastrarVeiculo = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAlterarVeiculo = new System.Windows.Forms.Button();
+            this.txtBoxVeiculoCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnDeletarVeiculo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 77);
+            this.label1.Location = new System.Drawing.Point(18, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 9;
@@ -60,7 +60,7 @@ namespace View
             // 
             // txtBoxVeiculoPlaca
             // 
-            this.txtBoxVeiculoPlaca.Location = new System.Drawing.Point(77, 72);
+            this.txtBoxVeiculoPlaca.Location = new System.Drawing.Point(60, 76);
             this.txtBoxVeiculoPlaca.Name = "txtBoxVeiculoPlaca";
             this.txtBoxVeiculoPlaca.Size = new System.Drawing.Size(157, 20);
             this.txtBoxVeiculoPlaca.TabIndex = 6;
@@ -70,7 +70,7 @@ namespace View
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 111);
+            this.label2.Location = new System.Drawing.Point(10, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 11;
@@ -79,7 +79,7 @@ namespace View
             // 
             // txtBoxVeiculoModelo
             // 
-            this.txtBoxVeiculoModelo.Location = new System.Drawing.Point(77, 108);
+            this.txtBoxVeiculoModelo.Location = new System.Drawing.Point(60, 111);
             this.txtBoxVeiculoModelo.Name = "txtBoxVeiculoModelo";
             this.txtBoxVeiculoModelo.Size = new System.Drawing.Size(157, 20);
             this.txtBoxVeiculoModelo.TabIndex = 10;
@@ -88,7 +88,7 @@ namespace View
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 181);
+            this.label3.Location = new System.Drawing.Point(18, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 13;
@@ -98,7 +98,7 @@ namespace View
             // 
             // txtBoxVeiculoNome
             // 
-            this.txtBoxVeiculoNome.Location = new System.Drawing.Point(77, 142);
+            this.txtBoxVeiculoNome.Location = new System.Drawing.Point(60, 45);
             this.txtBoxVeiculoNome.Name = "txtBoxVeiculoNome";
             this.txtBoxVeiculoNome.Size = new System.Drawing.Size(157, 20);
             this.txtBoxVeiculoNome.TabIndex = 12;
@@ -107,7 +107,7 @@ namespace View
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 145);
+            this.label5.Location = new System.Drawing.Point(16, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 15;
@@ -116,7 +116,7 @@ namespace View
             // 
             // txtBoxVeiculoCor
             // 
-            this.txtBoxVeiculoCor.Location = new System.Drawing.Point(77, 178);
+            this.txtBoxVeiculoCor.Location = new System.Drawing.Point(60, 146);
             this.txtBoxVeiculoCor.Name = "txtBoxVeiculoCor";
             this.txtBoxVeiculoCor.Size = new System.Drawing.Size(157, 20);
             this.txtBoxVeiculoCor.TabIndex = 14;
@@ -136,7 +136,7 @@ namespace View
             // 
             // btnCadastrarVeiculo
             // 
-            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(146, 238);
+            this.btnCadastrarVeiculo.Location = new System.Drawing.Point(77, 236);
             this.btnCadastrarVeiculo.Name = "btnCadastrarVeiculo";
             this.btnCadastrarVeiculo.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarVeiculo.TabIndex = 18;
@@ -144,45 +144,43 @@ namespace View
             this.btnCadastrarVeiculo.UseVisualStyleBackColor = true;
             this.btnCadastrarVeiculo.Click += new System.EventHandler(this.btnCadastrarVeiculo_Click);
             // 
+            // btnAlterarVeiculo
+            // 
+            this.btnAlterarVeiculo.Location = new System.Drawing.Point(77, 265);
+            this.btnAlterarVeiculo.Name = "btnAlterarVeiculo";
+            this.btnAlterarVeiculo.Size = new System.Drawing.Size(96, 23);
+            this.btnAlterarVeiculo.TabIndex = 21;
+            this.btnAlterarVeiculo.Text = "ALTERAR";
+            this.btnAlterarVeiculo.UseVisualStyleBackColor = true;
+            this.btnAlterarVeiculo.Visible = false;
+            this.btnAlterarVeiculo.Click += new System.EventHandler(this.btnAlterarVeiculo_Click);
+            // 
+            // txtBoxVeiculoCliente
+            // 
+            this.txtBoxVeiculoCliente.Location = new System.Drawing.Point(60, 181);
+            this.txtBoxVeiculoCliente.Name = "txtBoxVeiculoCliente";
+            this.txtBoxVeiculoCliente.Size = new System.Drawing.Size(157, 20);
+            this.txtBoxVeiculoCliente.TabIndex = 23;
+            this.txtBoxVeiculoCliente.UseWaitCursor = true;
+            // 
             // label6
             // 
-            this.label6.AccessibleDescription = "ID";
-            this.label6.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(2, 49);
+            this.label6.Location = new System.Drawing.Point(12, 184);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "CPF Cliente:";
+            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Cliente:";
             this.label6.UseWaitCursor = true;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(77, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.UseWaitCursor = true;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
-            // 
-            // btnDeletarVeiculo
-            // 
-            this.btnDeletarVeiculo.Location = new System.Drawing.Point(21, 238);
-            this.btnDeletarVeiculo.Name = "btnDeletarVeiculo";
-            this.btnDeletarVeiculo.Size = new System.Drawing.Size(96, 23);
-            this.btnDeletarVeiculo.TabIndex = 21;
-            this.btnDeletarVeiculo.Text = "DELETAR";
-            this.btnDeletarVeiculo.UseVisualStyleBackColor = true;
             // 
             // FormVeiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(267, 300);
-            this.Controls.Add(this.btnDeletarVeiculo);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxVeiculoCliente);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnAlterarVeiculo);
             this.Controls.Add(this.btnCadastrarVeiculo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -214,8 +212,8 @@ namespace View
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCadastrarVeiculo;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button btnAlterarVeiculo;
+        private System.Windows.Forms.TextBox txtBoxVeiculoCliente;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnDeletarVeiculo;
     }
 }

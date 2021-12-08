@@ -47,12 +47,13 @@ namespace View
             this.GridViewClientes.Size = new System.Drawing.Size(243, 361);
             this.GridViewClientes.TabIndex = 0;
             this.GridViewClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewClientes_CellContentClick);
+            this.GridViewClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewClientes_CellDoubleClick);
             // 
             // btnDeleteCliente
             // 
-            this.btnDeleteCliente.Location = new System.Drawing.Point(128, 331);
+            this.btnDeleteCliente.Location = new System.Drawing.Point(134, 329);
             this.btnDeleteCliente.Name = "btnDeleteCliente";
-            this.btnDeleteCliente.Size = new System.Drawing.Size(128, 29);
+            this.btnDeleteCliente.Size = new System.Drawing.Size(118, 29);
             this.btnDeleteCliente.TabIndex = 2;
             this.btnDeleteCliente.Text = "DELETAR CLIENTE";
             this.btnDeleteCliente.UseVisualStyleBackColor = true;

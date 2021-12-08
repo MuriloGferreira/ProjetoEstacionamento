@@ -14,13 +14,45 @@ namespace View
 {
     public partial class FormCliente : Form
     {
+        public FormCliente(string cpf, string nome)
+        {
+            InitializeComponent();
+
+            txtBoxClienteCpf.Text = cpf;
+            txtBoxClienteNome.Text = nome;
+
+        }
+
         public FormCliente()
         {
             InitializeComponent();
         }
 
+        //public string cpf
+        //{
+        //    get; set;
+        //}
+
+        //public string nome
+        //{
+        //    get; set;
+        //}
+
         private void FormCliente_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if(this.Tag != null)
+                {
+                    btnAlterarCliente.Visible = true;
+                    btnCadastrarCliente.Visible = false;
+                    txtBoxClienteCpf.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO CARREGAR DADOS !" + ex.Message);
+            }
 
         }
 
@@ -51,7 +83,6 @@ namespace View
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
-
             try
             {
                 if (string.IsNullOrEmpty(txtBoxClienteCpf.Text))
@@ -80,7 +111,6 @@ namespace View
             }
         }
 
-
         private Cliente CarregarObjetoClienteDoForm()
         {
             Cliente cliente = new Cliente();
@@ -101,32 +131,36 @@ namespace View
             return cliente;
         }
 
-        //private void btnDeletarCliente_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (string.IsNullOrEmpty(txtBoxClienteCpf.Text))
-        //        {
-        //            return;
-        //        }
-        //        if (string.IsNullOrEmpty(txtBoxClienteNome.Text))
-        //        {
-        //            return;
-        //        }
+        private void btnAlterarCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtBoxClienteCpf.Text))
+                {
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtBoxClienteNome.Text))
+                {
+                    return;
+                }
 
-        //        ClienteCtrl clientecontrole = new ClienteCtrl();
+                Cliente cliente = CarregarObjetoClienteDoForm();
 
-        //        if ((Boolean)clientecontrole.BD("deletar", null))
-        //        {
-        //            MessageBox.Show("PESSOA DELETADA COM SUCESSO !");
-        //        }
+                ClienteCtrl clientecontrole = new ClienteCtrl();
 
-        //        this.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("ERRO AO DELETADAR CLIENTE" + ex.Message);
-        //    }
-        //}
+                if ((Boolean)clientecontrole.BD("alterar", cliente))
+                {
+                    //CarregarGrid();
+                    MessageBox.Show("PESSOA ATUALIZADA COM SUCESSO !");
+                }
+
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("ERRO AO ATUALIZAR CLIENTE !" + ex.Message);
+            }
+        }
+
     }
 }

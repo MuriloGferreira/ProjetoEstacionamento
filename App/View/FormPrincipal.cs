@@ -76,9 +76,7 @@ namespace View
             var veiculo = new FormVeiculo();
             if (veiculo.ShowDialog() == DialogResult.OK)
             {
-                //Veiculo veiculoCadastrado = (Veiculo)veiculo.Tag;
-                //Repositorio.RepositorioGeral.RegistrarVeiculo(veiculoCadastrado);
-                //Console.WriteLine(Repositorio.RepositorioGeral.RepositorioGeralVeiculo.Count());
+
             }
             this.Show();
         }
@@ -121,5 +119,15 @@ namespace View
 
         }
 
+        private void btnListarVaga_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var listavaga = new FormListaVagas();
+            if (listavaga.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            this.Show();
+        }
     }
 }

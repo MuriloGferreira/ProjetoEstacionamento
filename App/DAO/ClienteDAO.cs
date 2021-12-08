@@ -103,7 +103,7 @@ namespace DAO
 
             try
             {
-                String SQL = String.Format("UPDATE cliente SET " + "nome = {0}," + " WHERE cpf = {1}", _obj.Nome, _obj.Cpf);
+                String SQL = String.Format("UPDATE cliente SET " + "nome = '{0}'" + " WHERE cpf = {1}", _obj.Nome, _obj.Cpf);
 
                 linhasAfetadas = BD.ExecutarIDU(SQL);
             }

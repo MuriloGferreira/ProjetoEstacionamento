@@ -8,22 +8,22 @@ using Model;
 
 namespace control
 {
-    public class ClienteCtrl
+    public class VagaCtrl
     {
         public Object BD(string _comando, Object _parametro)
         {
-            var cliente = new ClienteDAO();
+            var vaga = new VagaDAO();
 
             switch (_comando)
             {
-                case "inserir":
-                    return cliente.Inserir((Cliente)_parametro);
-                case "deletar":
-                    return cliente.Deletar((Int64)_parametro);
-                case "alterar":
-                    return cliente.Alterar((Cliente)_parametro);
-                case "todos":
-                    return cliente.ListarClientes();
+                //case "inserir":
+                //    return vaga.Inserir((Vaga)_parametro);
+                //case "deletar":
+                //    return vaga.Deletar((Int64)_parametro);
+                //case "alterar":
+                //    return vaga.Alterar((Vaga)_parametro);
+                //case "todos":
+                //    return vaga.ListarVagas();
                 //case "Evento":
                 //    return ClienteDAO.BuscarTodasPornome((int)_parametro);
                 //case "filtro":

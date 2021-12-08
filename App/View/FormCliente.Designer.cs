@@ -35,6 +35,7 @@ namespace View
             this.label2 = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnAlterarCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBoxClienteCpf
@@ -75,7 +76,7 @@ namespace View
             // 
             // btnCadastrarCliente
             // 
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 151);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(76, 138);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(96, 23);
             this.btnCadastrarCliente.TabIndex = 19;
@@ -94,11 +95,23 @@ namespace View
             this.label4.TabIndex = 28;
             this.label4.Text = "DADOS DO CLIENTE";
             // 
+            // btnAlterarCliente
+            // 
+            this.btnAlterarCliente.Location = new System.Drawing.Point(76, 167);
+            this.btnAlterarCliente.Name = "btnAlterarCliente";
+            this.btnAlterarCliente.Size = new System.Drawing.Size(96, 23);
+            this.btnAlterarCliente.TabIndex = 29;
+            this.btnAlterarCliente.Text = "ALTERAR";
+            this.btnAlterarCliente.UseVisualStyleBackColor = true;
+            this.btnAlterarCliente.Visible = false;
+            this.btnAlterarCliente.Click += new System.EventHandler(this.btnAlterarCliente_Click);
+            // 
             // FormCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(261, 202);
+            this.Controls.Add(this.btnAlterarCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.label2);
@@ -121,5 +134,6 @@ namespace View
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCadastrarCliente;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAlterarCliente;
     }
 }

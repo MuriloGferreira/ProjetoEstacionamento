@@ -8,7 +8,8 @@ using Model;
 namespace View
 {
     public partial class FormListaClientes : Form
-    {   
+    {
+        private Dictionary<Int64, Cliente> mapa;
         public FormListaClientes()
         {
             InitializeComponent();
@@ -40,21 +41,15 @@ namespace View
         {
             try
             {
-                //Pegar CPF do DataGridView / Selecionar CPF
-                //Vou ter meu CPF = Convert.ToInt64(dgvDados.Rows[0].Cells[0].Value.ToString());
+                DataGridViewRow primeiraLinhaSelecionada = GridViewClientes.SelectedRows[0];
+                DataGridViewCell primeiraColuna = primeiraLinhaSelecionada.Cells[0];
+                Object valorDentroDaCelula = primeiraColuna.Value;
+
+                String cpfSelecionadoString = valorDentroDaCelula.ToString();
+
+                Int64 cpfSelecionado = Convert.ToInt64(cpfSelecionadoString);
 
                 //Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
-
-
-                //DataGridViewRow primeiraLinhaSelecionada = GridViewClientes.SelectedRows[0];
-                //DataGridViewCell primeiraColuna = primeiraLinhaSelecionada.Cells[0];
-                //Object valorDentroDaCelula = primeiraColuna.Value;
-
-                //String cpfSelecionadoString = valorDentroDaCelula.ToString();
-
-                //Int64 cpfSelecionado = Convert.ToInt64(cpfSelecionadoString);
-
-                Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
 
                 //Acionar o meu controller
 
@@ -62,14 +57,13 @@ namespace View
 
                 if ((Boolean)clientecontrole.BD("deletar", cpfSelecionado))
                 {
-                    //CarregarGrid("");
+                    CarregarGrid();
                     MessageBox.Show("Pessoa deletada com sucesso!");
                 }
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ERRO AO DELETAR PESSOA: " + ex.Message);
+                MessageBox.Show("ERRO AO DELETAR PESSOA! " + ex.Message);
             }
         }
 
@@ -79,14 +73,42 @@ namespace View
             GridViewClientes.Rows.Clear();
 
             var controller = new ClienteCtrl();
-            Dictionary<Int64, Cliente> mapa = (Dictionary<Int64, Cliente>)controller.BD("todos", null);
+            mapa = (Dictionary<Int64, Cliente>)controller.BD("todos", null);
 
-            foreach (var cli in mapa.Values)
+            foreach (var cliente in mapa.Values)
             {
-                GridViewClientes.Rows.Add(cli.Nome, cli.Cpf);
+                GridViewClientes.Rows.Add(cliente.Cpf, cliente.Nome);
             }
         }
 
+        private void GridViewClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Int32 selectedRowCount = GridViewClientes.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
+            Int64 cpfSelecionado = Convert.ToInt64(GridViewClientes.SelectedRows[0].Cells[0].Value.ToString());
+
+            Cliente cliente = mapa[cpfSelecionado];
+
+            FormCliente formCliente = new FormCliente(cliente.Cpf.ToString(), cliente.Nome);
+
+            formCliente.Tag = cliente;
+
+            //formCliente.p
+
+            formCliente.ShowDialog();
+            
+        }
+
+        //private void btnUpdateCliente_Click(object sender, EventArgs e)
+        //{
+            //try
+            //{
+            //    Cliente cliente = CarregarGrid
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("ERRO AO ALTERAR PESSOA! " + ex.Message);
+            //}
+        //}
     }
 }
